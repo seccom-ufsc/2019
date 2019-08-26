@@ -250,10 +250,10 @@ function toggleWorkshopsLayout() {
 
 function toggleBrandImageSource() {
     if (innerWidth <= 320) {
-        $('#brand-image').attr('src', 'Images/favicon.png');
+        $('#brand-image').attr('src', 'Images/new-logo.png');
     }
     else {
-        $('#brand-image').attr('src', 'Images/favicon.png');
+        $('#brand-image').attr('src', 'Images/new-logo.png');
     }
 }
 
