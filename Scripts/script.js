@@ -171,14 +171,14 @@ function showcontent(title, desc, speach, src, company, workshop) {
     $('#credentials').html(title + " - " + company);
     $('#description').html(desc);
     if (workshop !== undefined){
-        $('#workshop').html('Workshop: ' + '<strong>' + workshop + '</strong>');
+        $('#workshop').html('Oficina: ' + '<strong>' + workshop + '</strong>');
     }
     else{
         $('#workshop').html('');
     }
 
     if (speach !== undefined) {
-        $('#speach').html('Lecture: ' + '<strong>' + speach + '</strong>');
+        $('#speach').html('Palestra: ' + '<strong>' + speach + '</strong>');
     }
     else {
         $('#speach').html('');
