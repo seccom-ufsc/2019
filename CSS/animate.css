@@ -8,8 +8,8 @@ Copyright (c) 2015 Daniel Eden
 */
 
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -20,8 +20,8 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
 }
 
 .animated.bounceIn,
@@ -1077,7 +1077,7 @@ Copyright (c) 2015 Daniel Eden
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  animation-duration: 1.5s;
+  animation-duration: .5s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -2540,8 +2540,7 @@ Copyright (c) 2015 Daniel Eden
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.75, .75, .75);
   }
 
   50% {
@@ -2552,8 +2551,7 @@ Copyright (c) 2015 Daniel Eden
 @keyframes zoomIn {
   0% {
     opacity: 0;
-    -webkit-transform: scale3d(.3, .3, .3);
-    transform: scale3d(.3, .3, .3);
+    transform: scale3d(.75, .75, .75);
   }
 
   50% {
@@ -2562,8 +2560,8 @@ Copyright (c) 2015 Daniel Eden
 }
 
 .zoomIn {
-  -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+  animation-duration: .5s;
 }
 
 @-webkit-keyframes zoomInDown {
