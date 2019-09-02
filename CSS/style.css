@@ -1,8 +1,17 @@
 body {
-    padding-top: 50px;
+    background: #111 !important;
+    padding-top: 48px;
     font-family: 'Armata', sans-serif;
     background-color: rgb(247,247,247);
     color: black;
+    font-size: 0.875em;
+}
+
+/* CUSTOM
+ */
+.register {
+    color: rgb(0, 0, 0);
+    font-weight: bold !important;
 }
 
 /* HEADINGS
@@ -70,8 +79,10 @@ h6 {
     background-color: rgb(247,247,247);
 }
 .section-title {
-    position:relative;
-    text-align:center;
+    padding-top: 2em;
+    margin-bottom: 3em;
+    position: relative;
+    text-align: center;
 }
 .section-title:after {
     content:'';
@@ -98,70 +109,40 @@ h6 {
 ------------------------------------------
 */
 .navbar-brand {
-    line-height:50px;
+    color: #dbdbdb;
+    height: 60px;
 }
 #brand-image {
     height: 100%;
-    display: inline-block;
 }
 .navbar-custom {
     min-height: 70px;
-    padding-top: 0;
     background-color: white;
     border-bottom: 2.5px solid rgba(36,54,101, 0.8);
 }
-.dropdown-menu {
+.navbar-toggler {
     background-color: white;
+    border: none;
 }
-.dropdown-menu > li > a {
-    line-height: 40px;
-    font-weight: 300;
-}
-.navbar-custom .navbar-nav > li > a {
+.navbar-custom .navbar-nav > a {
     color: rgba(36,54,101, 0.8);
-    font-weight: 500;
-    margin: auto;
-    display: table-cell;
-    vertical-align:middle;
-    line-height: 50px;
+    vertical-align: middle;
     font-size: 1.2em;
 }
+
+.navbar-custom .navbar-nav > a:hover,
+.navbar-custom .navbar-nav > a:active {
+    background-color: transparent;
+    text-decoration: underline;
+}
+.navbar-custom .navbar-nav > a:focus {
+    background-color: white;
+}
+
 .navbar-toggle {
-    position: relative;
-    float: right;
-    padding: 9px 10px;
-    margin-top: 25px;
-    margin-right: 20px;
-    border: none;
-    border-top: 4px solid rgba(36,54,101, 0.8);
-    height: 40px;
-    width: 32px;
-    border-radius: 0;
-    transition: 0.2s transform linear;
-    -webkit-transition: 0.2s transform linear;
+    background: white;
 }
-.navbar-toggle:after {
-    content: '';
-    width: 100%;
-    height: 4px;
-    top: 8px;
-    background: rgba(36,54,101, 0.8);
-    position: absolute;
-    left:0;
-    transition: 0.2s transform linear;
-    -webkit-transition: 0.2s transform linear;
-}
-.navbar-toggle:before {
-    content: '';
-    width: 100%;
-    height: 4px;
-    background: rgba(36,54,101, 0.8);
-    position: absolute;
-    top:20px;
-    left:0;
-    transition: 0.2s transform linear;
-    -webkit-transition: 0.2s transform linear;
-}
+
 .focused {
   border:none;
   outline: none;
@@ -170,35 +151,10 @@ h6 {
 .focused:after {
   transform: rotate(-90deg) translateX(-12px);
 }
-.navbar-custom .navbar-nav > li > a:hover,
-.navbar-custom .navbar-nav > li > a:active {
-    background-color: transparent;
-    text-decoration: underline;
-    font-size: 1.2em;
-    color: rgba(36,54,101, 0.8);
-}
-.navbar-custom .navbar-nav > li > a:focus {
-    background-color: white;
-    color: rgba(36,54,101, 0.8);
-}
 .active-link {
     background-color: #505050;
     border-bottom: solid;
     border-bottom-color: orange;
-}
-.navbar-collapse {
-    background-color: white;
-}
-
-.navbar-brand {
-    color: #dbdbdb;
-    margin-top: 0px;
-    height: 80px;
-    display: inline-block;
-    font-size: 1.3em;
-}
-.navbar-brand:hover {
-    color: #ffffff;
 }
 
 /* JUMBOTRON
@@ -209,7 +165,7 @@ h6 {
     position: fixed;
     width: 100%;
     height: 400px;
-    top: 80px;
+    top: 78px;
     z-index: -1;
 }
 .jumbotron {
@@ -253,7 +209,7 @@ h6 {
     background-color: rgba(36,54,101, 0.8);
     width: 100%;
     margin-top: 430px;
-    padding: 55px 30px 80px 30px;
+    padding: 55px 30px 55px 30px;
 }
 #evenea-btn {
     padding: 15px 30px 15px 35px;
@@ -646,33 +602,27 @@ h6 {
     text-decoration: none;
     color: black;
 }
-.fliper img {
-    margin: 1em;
-}
 .honorable-patron {
     width: 300px;
     margin: auto;
 }
 .company-img {
     max-width: 150px;
-}
-.panel-partner {
-    border: none;
-    box-shadow: none;
-}
-.image-holder {
-    margin: auto;
-    width: 150px;
-    height: 150px;
+    border-radius: 50%;
 }
 
 /* --> SPECIFIC SPONSOR-PLANS
  */
-.company-img .diamond {
+.company-img.diamond {
+    width: 225px;
     max-width: 225px;
 }
-.company-img .gold {
+.company-img.gold {
+    width: 150px;
     max-width: 150px;
+}
+#patrons .row {
+    margin-bottom: 2em;
 }
 
 /* MAP DIV
@@ -948,9 +898,11 @@ h6 {
 
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
+    /*
     .navbar-collapse.collapse {
         display: none!important;
     }
+    */
     .navbar-nav {
         float: none!important;
         margin: 0px -15px 30px 20px;

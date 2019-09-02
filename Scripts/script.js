@@ -118,7 +118,7 @@ function toggleTimerVisibility() {
 }
 
 // hide loader
-$(window).load(function () {
+$(window).on('load', function () {
     var loader = $('.loader');
     var loadHide = function () {
         loader.fadeOut();
