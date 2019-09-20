@@ -418,6 +418,27 @@ h6 {
     color: white;
 }
 
+.keynote {
+    background: rgba(98, 54, 101, .8);
+}
+
+.keynote h4 {
+    font-weight: bold;
+    color: white;
+}
+
+.coffee-break {
+    background: none;
+}
+
+.lightning-talk {
+    background: none;
+}
+
+.lightning-talk * {
+    color: rgb(13,30,58) !important;
+}
+
 /* WORKSHOP NAVIGATION TABS
 ------------------------------------------
 */
