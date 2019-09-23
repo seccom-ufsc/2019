@@ -422,13 +422,17 @@ h6 {
     background: rgba(98, 54, 101, .8);
 }
 
-.keynote h4 {
-    font-weight: bold;
+.keynote * {
     color: white;
+    font-weight: bold;
 }
 
 .coffee-break {
     background: none;
+}
+
+.coffee-break * {
+    color: rgb(13,30,58) !important;
 }
 
 .lightning-talk {
