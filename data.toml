@@ -5,10 +5,11 @@
         subtitle = 'Segunda-feira'
 
         [[schedule.days.events]]
-        type = 'extra'
+        type = 'break'
         title = 'Abertura'
         time = '13:20'
         icon = 'door-open'
+        ownrow = true
 
         [[schedule.days.events]]
         type = 'keynote'
@@ -21,22 +22,16 @@
         title = 'Técnicas para Redução de Sobrecarga em Sistemas Tolerantes a Falhas'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '15:20'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '15:40'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '16:10'
-        icon = 'bolt'
+        type = 'break'
+        time = '15:20 → 15:40 → 16:10'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         speaker = 'maicon'
@@ -44,7 +39,7 @@
         time = '16:30'
 
         [[schedule.days.events]]
-        type = 'extra'
+        type = 'break'
         title = 'Janta'
         time = '17:20'
         icon = 'utensils'
@@ -55,22 +50,16 @@
         time = '18:30'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '19:30'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '19:50'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '20:20'
-        icon = 'bolt'
+        type = 'break'
+        time = '19:30 → 19:50 → 20:20'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         type = 'soon'
@@ -80,6 +69,9 @@
     [[schedule.days]]
         title = '01 de Outubro'
         subtitle = 'Terça-feira'
+
+        [[schedule.days.events]]
+        type = 'break'
 
         [[schedule.days.events]]
         type = 'soon'
@@ -118,22 +110,16 @@
         '''
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '15:20'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '15:40'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '16:10'
-        icon = 'bolt'
+        type = 'break'
+        time = '15:20 → 15:40 → 16:10'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         type = 'special'
@@ -142,7 +128,7 @@
         time = '16:30'
 
         [[schedule.days.events]]
-        type = 'extra'
+        type = 'break'
         title = 'Janta'
         time = '17:20'
         icon = 'utensils'
@@ -153,22 +139,16 @@
         time = '18:30'
 
         [[schedule.days.events]]
-        type = 'extra'
-        time = '19:30'
-        title = 'Lightning Talks!'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        time = '19:50'
-        title = 'Coffee-break'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        time = '20:20'
-        title = 'Lightning Talks!'
-        icon = 'bolt'
+        type = 'break'
+        time = '19:30 → 19:50 → 20:20'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         speaker = 'hauck'
@@ -181,10 +161,20 @@
         subtitle = 'Quarta-feira'
 
         [[schedule.days.events]]
+        type = 'break'
+
+        [[schedule.days.events]]
         type = 'extra'
         time = '13:30 - 17:30'
         title = 'Reservado para Manifestações'
+        spaces = 4
         icon = 'fist-raised'
+
+        [[schedule.days.events]]
+        type = 'break'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
 
         [[schedule.days.events]]
         type = 'keynote'
@@ -192,22 +182,16 @@
         time = '18:30'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '19:30'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '19:50'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '20:20'
-        icon = 'bolt'
+        type = 'break'
+        time = '19:30 → 19:50 → 20:20'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         type = 'special'
@@ -221,6 +205,9 @@
         subtitle = 'Quinta-feira'
 
         [[schedule.days.events]]
+        type = 'break'
+
+        [[schedule.days.events]]
         type = 'keynote'
         speaker = 'mario'
         time = '13:30 - 17:30'
@@ -231,22 +218,16 @@
         title = 'Green Computing: A Computação Sustentável'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '15:20'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '15:40'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '16:10'
-        icon = 'bolt'
+        type = 'break'
+        time = '15:20 → 15:40 → 16:10'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         type = 'special'
@@ -255,7 +236,7 @@
         subtitle = 'Conjuntura Atual e Universidade'
 
         [[schedule.days.events]]
-        type = 'extra'
+        type = 'break'
         title = 'Janta'
         time = '17:20'
         icon = 'utensils'
@@ -266,22 +247,16 @@
         time = '18:30'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '19:30'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '19:50'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '20:20'
-        icon = 'bolt'
+        type = 'break'
+        time = '19:30 → 19:50 → 20:20'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         time = '20:40'
@@ -294,6 +269,9 @@
         subtitle = 'Sexta-feira'
 
         [[schedule.days.events]]
+        type = 'break'
+
+        [[schedule.days.events]]
         type = 'keynote'
         time = '13:30 - 17:30'
         speaker = 'melissa'
@@ -304,22 +282,16 @@
         title = 'Fazendo um bom projeto de pesquisa'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '15:20'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '15:40'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '16:10'
-        icon = 'bolt'
+        type = 'break'
+        time = '15:20 → 15:40 → 16:10'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+            'arrow-right',
+            'bolt',
+        ]
 
         [[schedule.days.events]]
         speaker = 'nicolao'
@@ -327,16 +299,14 @@
         time = '16:30'
 
         [[schedule.days.events]]
-        type = 'extra'
-        title = 'Encerramento'
-        time = '17:20'
-        icon = 'door-closed'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Janta'
-        time = '17:30'
-        icon = 'utensils'
+        type = 'break'
+        title = 'Encerramento → Janta'
+        time = '17:20 → 17:30'
+        icon = [
+            'door-closed',
+            'arrow-right',
+            'utensils',
+        ]
 
         [[schedule.days.events]]
         type = 'extra'

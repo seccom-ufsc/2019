@@ -141,27 +141,44 @@
                     <!--TIMELINE-->
                     <h3 id="Programação" class="section-title">Programação</h3>
                     <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
+                        <div class="row d-flex flex-row">
                         {% for day in schedule.days %}
+                            <div class="col">
                             <center class="section-title">
                                 <h2>{{ day.title }}</h2>
                                 {{ day.subtitle }}
                             </center>
 
-                            <div class="row d-flex flex-row">
+                            <div class="row d-flex flex-column">
                                 {% for event in day.events %}
-                                    <div class="conference-main {{ 'extra col-sm-4' if event.type == 'extra' else event.type }}">
+                                    {% set event_class = [
+                                        'conference-main col',
+                                        'extra' if event.type == 'extra' else event.type,
+                                        'event-size-' + event.spaces|string if event.spaces else '',
+                                       ]|join(' ')
+                                    %}
+                                    <div
+                                        class="{{ event_class }}">
+                                        {% if event.time %}
                                         <h6>{{ event.time }}</h6>
+                                        {% endif %}
                                         <p>
                                             {% if event.type == 'keynote' %}
                                                 {% set speaker = keynotes[event.speaker] %}
-                                                <h4>{{ speaker.name }}</h4>
+                                                <h6>{{ speaker.name }}</h6>
                                                 <br>
                                                 <p>{{ speaker.short }}</p>
                                             {% elif event.type == 'soon' %}
                                                 <i>Aguardando confirmação do palestrante</i>
                                             {% else %}
                                                 {% if event.icon %}
-                                                <i class="fas fa-{{- event.icon }} fa-3x"></i>
+                                                    {% if event.icon|is_list %}
+                                                        {% for icon in event.icon %}
+                                                            <i class="fas fa-{{- icon }} fa-3x"></i>
+                                                        {% endfor %}
+                                                    {% else %}
+                                                        <i class="fas fa-{{- event.icon }} fa-3x"></i>
+                                                    {% endif %}
                                                 <br>
                                                 {% endif %}
                                                 <p><b>{{ event.title }}</b></p>
@@ -177,7 +194,9 @@
                                     </div>
                                 {% endfor %}
                             </div>
+                            </div>
                         {% endfor %}
+                        </div>
                     </div>
 
                     <!--WORKSHOPS-->

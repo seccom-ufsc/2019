@@ -411,27 +411,58 @@ h6 {
   border-radius: 100%;
   margin-left: 3.5px;
 }
+
 .conference-main {
-    padding: 20px 40px 20px 40px;
+    padding: 1em;
+    margin: 0.2em auto;
     background-color: rgba(36,54,101, 0.8);
     text-align: center;
-    width: 70%;
-    margin: 30px auto 10px auto;
+    vertical-align: middle;
+    max-width: 80%;
+    min-height: 16em;
 }
+
+@media (min-width: 578px) {
+    .event-size-4 {
+        background: darkgray !important;
+        min-height: 61.2em;
+    }
+
+    .event-size-5 {
+        background: darkgray !important;
+        min-height: 80em;
+    }
+
+    .event-size-6 {
+        background: darkgray !important;
+        min-height: 94em;
+    }
+}
+
+#timeline {
+    font-size: 0.7em;
+}
+
+#timeline .section-title h2 {
+    font-size: 1.25rem;
+}
+
 .conference-main p {
-    font-size: 1.1em;
     color: white;
 }
 .conference-main h6 {
-    font-size: 1.3em;
     color: white;
 }
 
-.extra {
+.break {
+    min-height: 12em;
+}
+
+.extra, .break {
     background: none;
 }
 
-.extra * {
+.extra *, .break * {
     color: rgb(13,30,58) !important;
 }
 
