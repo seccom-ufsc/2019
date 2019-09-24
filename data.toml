@@ -1,0 +1,16 @@
+[schedule]
+    [[schedule.days]]
+        title = '30 de Outubro'
+        subtitle = 'Segunda-feira'
+
+        [[schedule.days.events]]
+        title = 'Abertura'
+        type = 'special'
+        time = '13:20'
+        icon = 'door-open'
+
+
+[[speakers]]
+    [[speakers.marcio]]
+    name = 'Márcio Bastos Castro'
+    bio = '''None.'''

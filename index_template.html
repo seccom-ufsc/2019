@@ -141,21 +141,24 @@
                     <!--TIMELINE-->
                     <h3 id="Programação" class="section-title">Programação</h3>
                     <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
-                        
+                        {% for day in schedule.days %}
                         <center>
-                            <h2>30 de Outubro</h2>
-                            Segunda-feira
+                            <h2>{{ day.title }}</h2>
+                            {{ day.subtitle }}
                         </center>
-                        
-                        <div class="conference-main special">
-                            <h6>13:20</h6>
+                        {% for event in day.events %}
+                        <div class="conference-main {{ event.type }}">
+                            <h6>{{ event.time }}</h6>
                             <p>
-                                
-                                <b>Abertura</b>
+                                {% if event.icon %}
+                                <i class="fas fa-{{- event.icon -}} fa-3x"></i>
+                                <br>
+                                {% endif %}
+                                <b>{{ event.title }}</b>
                             </p>
                         </div>
-                        
-                        
+                        {% endfor %}
+                        {% endfor %}
 
                         <div class="conference-main coffee-break">
                             <h6>13:20</h6>
