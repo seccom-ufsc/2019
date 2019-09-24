@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <title>SECCOM 2019</title>
+    <meta name="description" content="Semana Acadêmica de Ciências da Computação e Sistemas da Informação da UFSC" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="./Images/logo.png" />
+    <meta property="og:title" content="Seccom 2019">
+    <meta property="og:description" content="Conference description">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/animate.css" />
+    <link rel="stylesheet" href="./CSS/hover.css"/>
+
+    <link rel="icon" href="./Images/short.png" />
+    <link rel="shortcut icon" href="./Images/favicon-.png" />
+    <link href="./CSS/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <link href='https://fonts.googleapis.com/css?family=Armata&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="https://kit.fontawesome.com/b0f30dc6cc.js" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <div class="loader">
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+        <span class="loader-circle"></span>
+    </div>
+    <nav class="navbar navbar-custom navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a href="#" class="navbar-brand">
+                <img id="brand-image">
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link scroll-top uppercased" id="top-btn" href="#">Início</a>
+                    <a class="nav-item nav-link uppercased" href="#Programação" data-id="timeline">Programação</a>
+                    <a class="nav-item nav-link uppercased" href="#Palestrantes" data-id="speakers">Palestrantes</a>
+                    <a class="nav-item nav-link uppercased" href="#Organização" data-id="partners">Organização</a>
+                    <a class="nav-item nav-link uppercased" href="#Contato" data-id="contact">Contato</a>
+                    <a class="nav-item nav-link register uppercased" href="https://www.sympla.com.br/seccom-2019__632383">INSCREVA-SE</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg">
+        <div class="jumbotron">
+            <div class="container d-flex flex-row">
+                <div class="p-2">
+                    <h4 style="color:white" class="title-header animated slideInLeft uppercased">seccom 2019</h4>
+                    <h6 style="color:white" class="title-header animated slideInLeft uppercased">semana acadêmica de computação e sistemas</h6>
+                    <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">Universidade Federal de Santa Catarina</p>
+                    <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">Auditório João Ernesto Escosteguy Castro</p>
+                    <p style="color:white;  font-size: 1.1em" class="title-text animated fadeInRight">R. Roberto Sampaio Gonzaga, Florianópolis</p>
+                    <p style="color:white;  font-size: 1.1em" class="title-text animated fadeInRight uppercased">30/09/19 - 04/10/19</p>
+                </div>
+                <div id="timer" class="col ml-auto" style="display: none">
+                    <p style="color: white; font-size: 1.1em" class="uppercased">falta só um pouquinho!</p>
+                    <span id="days" class="counter"></span>
+                    <span id="hours" class="counter"></span>
+                    <span id="minutes" class="counter"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="evenea">
+        <div id="evenea-c" class="col-sm-12">
+            <a href="https://www.sympla.com.br/seccom-2019__632383" id="evenea-btn">
+                INSCREVA-SE<span style="color:white; margin-left: 7px" class="fa fa-pencil"></span>
+            </a>
+        </div>
+        <!-- <div id="evenea-l" class="col-sm-4">
+                <p id="evenea-txt" class="uppercased">INSCREVA-SE</p>
+        </div> -->
+    </div>
+    <div id="wrapper">
+        <div class="page-section" id="feedback">
+            <div class="container">
+                <div class="row features">
+                    <div class="col-sm-4 animated fadeInUp">
+                        <div class="text-center">
+                            <h4>Palestras</h4>
+                            <img class="feat-img" src="img/about-section/palestras.jpg" />
+                        </div>
+                        <p class="feat-desc">Por toda a semana teremos
+                        palestras sobre técnicas e tecnologias emergentes,
+                        áreas de pesquisa e mais.</p>
+                    </div>
+                    <div class="col-sm-4 animated fadeInUp delay">
+                        <div class="text-center">
+                            <h4>Minicursos</h4>
+                            <img class="feat-img" src="img/about-section/minicursos.jpg" />
+                        </div>
+                        <p class="feat-desc">Aprenda a utilizar ferramentas,
+                        linguagens e ambientes de desenvolvimento com quem as
+                        domina através dos minicursos oferecidos durante a
+                        semana.</p>
+                    </div>
+                    <div class="col-sm-4 animated fadeInUp delayed">
+                        <div class="text-center">
+                            <h4>Competições</h4>
+                            <img class="feat-img" src="img/about-section/competicoes.jpg" />
+                        </div>
+                        <p class="feat-desc">
+                            Participe de desafios de programação e segurança
+                            com a Maratona de Programação e o Capture The Flag!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Acho que a gente nao quer isso aqui -->
+        <!-- <section id="red">
+            <div style="display: table; width: 100%; height: 100%; text-align: center" class="container">
+                <div style="display: table-cell; vertical-align: middle;">
+                    <p class="red-info">Come and earn yourself a chance to win great prizes sponosored by our partners!</p>
+                    <img src="Images/heart.png" class="beat" />
+                    <p class="red-info">Prizes are sponsored by:  <a style="color: white; text-decoration: underline; font-size: 1.2em">Partner</a> and <a style="color: white; text-decoration: underline; font-size: 1.2em">Partner</a>.</p>
+                </div>
+            </div>
+        </section> -->
+        <div class="page-section" id="features">
+            <div class="container">
+                <section id="timeline">
+                    <!--TIMELINE-->
+                    <h3 id="Programação" class="section-title">Programação</h3>
+                    <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
+                        {% for day in schedule.days %}
+                            <center class="section-title">
+                                <h2>{{ day.title }}</h2>
+                                {{ day.subtitle }}
+                            </center>
+
+                            <div class="row d-flex flex-row">
+                                {% for event in day.events %}
+                                    <div class="conference-main {{ 'extra col-sm-4' if event.type == 'extra' else event.type }}">
+                                        <h6>{{ event.time }}</h6>
+                                        <p>
+                                            {% if event.type == 'keynote' %}
+                                                {% set speaker = keynotes[event.speaker] %}
+                                                <h4>{{ speaker.name }}</h4>
+                                                <br>
+                                                <p>{{ speaker.short }}</p>
+                                            {% elif event.type == 'soon' %}
+                                                <i>Aguardando confirmação do palestrante</i>
+                                            {% else %}
+                                                {% if event.icon %}
+                                                <i class="fas fa-{{- event.icon }} fa-3x"></i>
+                                                <br>
+                                                {% endif %}
+                                                <p><b>{{ event.title }}</b></p>
+                                                {% if event.speaker %}
+                                                    {% set speaker = speakers[event.speaker] %}
+                                                    <p>{{ speaker.name }}</p>
+                                                {% endif %}
+                                            {% endif %}
+                                            {% if event.subtitle %}
+                                            <p>{{ event.subtitle }}</p>
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <!--WORKSHOPS-->
+                    <h3 style="margin-bottom: 50px;" class="section-title">Oficinas</h3>
+                    <section id="workshops">
+                        <center style="padding-top: 2em;">
+                            <b>Em breve.</b>
+                            <br>
+                            Gostaria de ofertar uma oficina na SECCOM?
+                            <a href="https://speakerfight.com/events/seccom-2019-minicursos/">Submeta sua proposta!</a>
+                        </center>
+                        <!--
+                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
+                            <span class="track">Track#1</span>
+                        </div>
+                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
+                            <span class="track">Track#2</span>
+                        </div>
+                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
+                            <span class="track">Track#3</span>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="workshop-desc">
+                                    <h3>12:15 - 13:00</h3>
+                                    <p>Workshop#1</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="workshop-desc">
+                                    <h3>12:15 - 13:00</h3>
+                                    <p>Workshop#2</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="workshop-desc" style="height: 230px; display: table; width: 100%;">
+                                    <div style="display: table-cell; vertical-align: middle;">
+                                        <h3>12:15 - 14:00</h3>
+                                        <p>Workshop#3</p>
+                                    </div>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                            <div class="col-sm-8" style="margin-top: -110px">
+                                <div class="workshop-desc">
+                                    <h3>13:00 - 14:00</h3>
+                                    <p>Workshop#4</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                        </div>
+                        --!>
+                </section>
+                <!--WORKSHOPS MOBILE-->
+                <!--
+                <section id="workshops-mobile">
+                    <div class="container">
+                        <ul class="nav nav-tabs bkmarks" role="tablist">
+                            <li role="presentation" class="active"><a href="#workshops1" aria-controls="workshops1" role="tab" data-toggle="tab">Track#1</a></li>
+                            <li role="presentation"><a href="#lectures" aria-controls="lectures" role="tab" data-toggle="tab">Track#2</a></li>
+                            <li role="presentation"><a href="#workshops2" aria-controls="workshops2" role="tab" data-toggle="tab">Track#3</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active in" id="workshops1" role="tabpanel">
+                                <div class="workshop-desc">
+                                    <h3>12:15 - 13:00</h3>
+                                    <p>Workshop#1</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                                <div class="workshop-desc">
+                                    <h3>13:00 - 14:00</h3>
+                                    <p>Workshop#4</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                            <div class="tab-pane" id="lectures" role="tabpanel">
+                                <div class="workshop-desc">
+                                    <h3>12:15 - 13:00</h3>
+                                    <p>Workshop#2</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                                <div class="workshop-desc">
+                                    <h3>13:00 - 14:00</h3>
+                                    <p>Workshop#4</p>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                            <div class="tab-pane" id="workshops2" role="tabpanel">
+                                <div class="workshop-desc rowspan" style="height: 195px; display: table; width: 100%;">
+                                    <div style="display: table-cell; vertical-align: middle;">
+                                        <h3>12:15 - 14:00</h3>
+                                        <p>Workshop#3</p>
+                                    </div>
+                                </div>
+                                <div class="workshop-speaker">Speaker (Company)</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                --!>
+            </section>
+        </div>
+        <section id="speakers" style="background-color: rgb(247,247,247)">
+            <div id="Palestrantes" class="container" style="text-align:center; padding-bottom: 50px; padding-top:20px">
+                <div class="text-center">
+                    <h3 style="margin-bottom: 60px;" class="section-title">Keynotes</h3>
+                </div>
+                <div class="row" style="text-align: center; margin-top: 40px;">
+                    <div class="col-md-3 col-xs-6">
+                        <a
+                            class="speaker-link"
+                            data-title='Jon "Maddog" Hall'
+                            data-company="Linux Professional Institute"
+                            data-desc="Jon é atual presidente da Linux
+                            Professional Institute. Entrou para a indústria da
+                            computação em 1969, atuando como programador,
+                            administrador de sistemas, gerente de produto,
+                            gerente técnico de marketing, consultor, professor
+                            de universidade, autor de livros e revistas, e
+                            blogger.
+
+                            Ao longo dos anos já previa algumas das tendências
+                            antes delas se realizarem: o surgimento do Unix
+                            como Sistema Operacional, o uso de CD-ROMs para
+                            distribuir software, o crescimento do Linux como um
+                            sistema comercial, e a necessidade de produtos na
+                            nuvem que fossem open-source, ponta-a-ponta e
+                            seguros.
+
+                            Também participa de várias iniciativas, como a
+                            Caninos Loucos, que visa potencializar no Brasil o
+                            projeto e manufatura de computadores de chip único.
+
+                            No momento, &quot;Maddog&quot; está como CEO na
+                            OptDyn a fim de ajudá-la a mudar o mundo."
+                            data-src="https://media.licdn.com/dms/image/C4E03AQHbq2GkjjIC8A/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=P-ezM0P_5Us9cHn2JBILfnDbqnJ0JXuOpoOv4R5EqyM"
+                        >
+                            <img
+                                class="image"
+                                src="https://media.licdn.com/dms/image/C4E03AQHbq2GkjjIC8A/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=P-ezM0P_5Us9cHn2JBILfnDbqnJ0JXuOpoOv4R5EqyM"
+                                alt='Jon "Maddog" Hall'
+                            />
+                            <h3 class="speaker-name">Jon "Maddog" Hall</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <a data-title="Mário Sérgio Oliveira de Queiroz"
+                            data-company="Python Brasil"
+                            data-desc="(Descrição em breve.)"
+                            class="speaker-link"
+                            data-src="https://media.licdn.com/dms/image/C5603AQFQgRrlMiuJRQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=Ph37p5liKrH9B1uQf6gueXXpkWGYoO_qoB0eFHlYuyc"
+                        >
+                            <img
+                                class="image"
+                                src="https://media.licdn.com/dms/image/C5603AQFQgRrlMiuJRQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=Ph37p5liKrH9B1uQf6gueXXpkWGYoO_qoB0eFHlYuyc"
+                                alt = "Mário Sérgio Oliveira de Queiroz"
+                            />
+                            <h3 class="speaker-name">Mário Sérgio Oliveira de Queiroz</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <a data-title="Melissa Weber Mendonça"
+                            data-company="UFSC"
+                            data-desc="Melissa possui graduação em Matemática e Computação Científica pela Universidade Federal de Santa Catarina (2002), mestrado em Matemática e Computação Científica pela Universidade Federal de Santa Catarina (2005) e doutorado pela Facultés Universitaires Notre-Dame de La Paix (Bélgica, 2009). Tem experiência na área de Matemática Aplicada, atuando principalmente nos seguintes temas: otimização, análise numérica, métodos recursivos e métodos multiníveis (multigrid)."
+                            class="speaker-link"
+                            data-src="https://media.licdn.com/dms/image/C4E03AQGYq_Fh9PM9sA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=pStgltdGcWMeb9JxNnjVAk9GRfe_RCbguFSvb7C3M7o"
+                        >
+                            <img class="image"
+                                src="https://media.licdn.com/dms/image/C4E03AQGYq_Fh9PM9sA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=pStgltdGcWMeb9JxNnjVAk9GRfe_RCbguFSvb7C3M7o"
+                                alt = "Melissa Weber Mendonça"
+                            />
+                            <h3 class="speaker-name">Melissa Weber Mendonça</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-xs-6">
+                        <a
+                            data-title='Álvaro "Turicas" Justen'
+                            data-company="Brasil.io"
+                            data-desc="(Descrição em breve.)"
+                            class="speaker-link"
+                            data-src="https://media.licdn.com/dms/image/C4E03AQGlh28zKfgkUQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=MnuB2YcMbIEeEKwpoNpCV_HDtw1_y38c-jTElfecav0">
+                            <img
+                                class="image"
+                                src="https://media.licdn.com/dms/image/C4E03AQGlh28zKfgkUQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=MnuB2YcMbIEeEKwpoNpCV_HDtw1_y38c-jTElfecav0"
+                                alt='Álvaro "Turicas" Justen'
+                            />
+                            <h3 class="speaker-name">Álvaro "Turicas" Justen</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center; margin-top: 20px;">
+                    <!-- Os bloco comentado tem uns campo customizado de workshop e tretas -->
+
+                    <!-- <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
+                        <a class="speaker-link" data-title="Speaker" data-company="Company" data-desc="Sed ipsum justo, sodales vitae vulputate quis, cursus vel libero. Nullam aliquet rutrum ultrices. Ut sodales leo mauris, at fermentum dolor sagittis et. In volutpat nibh ipsum, ac pulvinar lectus ornare et." data-speach="Lecture#5" data-src="https://avatars2.githubusercontent.com/u/9861724?v=3&s=460">
+                            <img class="image" src="https://avatars2.githubusercontent.com/u/9861724?v=3&s=460" alt="Jacek Samujło" />
+                            <h3 class="speaker-name">Speaker</h3>
+                        </a>
+                    </div> -->
+                    <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
+                        <a class="speaker-link"
+                            data-title="Maria Queiroz"
+                            data-company="Data For Good"
+                            data-desc="Maria Queiroz é consultora de Business
+                                Intelligence e já atuou em grandes marcas do
+                                varejo como Adidas, Arezzo e Schutz. Já passou
+                                pelo setor de telecomunicações, setor público e
+                                indústria.
+
+                                É apaixonada pelo poder dos dados para
+                                potencializar resultados, seja ele para
+                                negócios ou para sociedade.
+
+                                Já mentorou grandes iniciativas de impacto
+                                social, como: Social Good Brasil, InovAtiva
+                                Brasil e Technovation Challenge."
+                            data-speach="Como usar dados para o bem?"
+                            data-src="https://media.licdn.com/dms/image/C5603AQEoln2o4jwbSA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=cQKrUoRAD6w7y9_gXSejHsmLCM8I1CWrduSkVdjd2I4"
+                        >
+                            <img class="image"
+                                src="https://media.licdn.com/dms/image/C5603AQEoln2o4jwbSA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=cQKrUoRAD6w7y9_gXSejHsmLCM8I1CWrduSkVdjd2I4"
+                                alt="Maria Queiroz"
+                            />
+                            <h3 class="speaker-name">Maria Queiroz</h3>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
+                        <a class="speaker-link"
+                            data-title="Victor Araújo de Menezes"
+                            data-company="E-GOV UFSC"
+                            data-desc="Victor é Doutorando e Mestre em Direito da Sociedade de Informação e Propriedade Intelectual pela UFSC. Também pesquisador do E-GOV UFSC e analista de proteção de dados, atua na área de consultoria empresarial."
+                            data-speach="Proteção de Dados"
+                            data-src="https://media.licdn.com/dms/image/C4E03AQGuLcsCiF7Tjg/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=X4_QVn2pK52PA5xfrtI7XMyToGZOugzp3ko8oVtWNmk"
+                        >
+                            <img class="image"
+                                src="https://media.licdn.com/dms/image/C4E03AQGuLcsCiF7Tjg/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=X4_QVn2pK52PA5xfrtI7XMyToGZOugzp3ko8oVtWNmk"
+                                alt="Victor Araújo de Menezes"
+                            />
+                            <h3 class="speaker-name">Victor Araújo de Menezes</h3>
+                        </a>
+                    </div>
+			        <div class="col-lg-4" style="text-align: center;">
+                        <a data-title="Taíssa Vasconcelos"
+                            data-company="Linx"
+                            data-desc="Taíssa Vasconcelos é uma belenense
+                            formada em Publicidade, que já atuou como Social
+                            Media, Produtora, Visual Designer e Front-End. Tem
+                            várias especializações em Front e UX. Atualmente
+                            trabalha na Linx Impulse como Front-End. É
+                            apaixonada por animais, praia e acredita que vai
+                            ajudar a tornar o mundo um lugar melhor."
+                            class="speaker-link"
+                            data-src="./img/people/TaissaVasconcelos.jpg"
+                        >
+                            <img class="image"
+                                src="./img/people/TaissaVasconcelos.jpg"
+                                alt="Taíssa Vasconcelos"
+                            />
+                            <h3 class="speaker-name">Taíssa Vasconcelos</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--OVERLAY-->
+            <div id="overlay"></div>
+            <div class="overlay-content animated zoomIn">
+                <a class="hdoverlay"><span class="fa fa-2x fa-close"></span></a>
+                <div id="overlay-img-div" class="col-sm-4">
+                    <img class="overlay-img" src="" />
+                </div>
+                <div id="overlay-text" class="col-sm-8">
+                    <h2 id="credentials"></h2>
+                    <p style="text-align:justify" id="description"></p>
+                    <p id="speach"></p>
+                    <p id="workshop"></p>
+                </div>
+            </div>
+        </section>
+        <section id="partners" style="background-color: white; padding-bottom: 10px;">
+            <div id="Organização" class="container text-center">
+                <div class="section-title">
+                    <div class="text-center">
+                        <h3 class="section-title">Organização</h3>
+                    </div>
+                </div>
+                <div class="row d-flex flex-row">
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://github.com/GabrielSimonetto">
+                                    <img class="company-img" src="Images/Organizers/GabrielSimonetto.jpg" />
+                                    <br>Gabriel Frank Simonetto
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://github.com/jptiz">
+                                    <img class="company-img" src="Images/Organizers/Tiz.jpg" />
+                                    <br>João Paulo Taylor Ienczak Zanette
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://github.com/thaleszh">
+                                    <img class="company-img" src="Images/Organizers/Thales.jpg" />
+                                    <br>Thales Alexandre Zirbel Hübner
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://www.linkedin.com/in/vanessa-cunha/">
+                                    <img class="company-img" src="Images/Organizers/VanessaCunha.jpg" />
+                                    <br>Vanessa Cunha
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://github.com/Coquinho">
+                                    <img class="company-img" src="Images/Organizers/Coquinho.jpg" />
+                                    <br>Lucas Cavalcante de Sousa
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="http://github.com/gorgonun">
+                                    <img class="company-img" src="Images/Organizers/Patrick.jpg" />
+                                    <br>Patrick Valencio Leguizamon
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="http://github.com/junakayama">
+                                    <img class="company-img" src="Images/Organizers/JuliaNakayama.jpg" />
+                                    <br>Júlia Nakayama Silveira
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="panel-partner text-center">
+                            <div class="panel-body">
+                                <a class="fliper" href="https://www.linkedin.com/in/pedro-n-314988134">
+                                    <img class="company-img" src="Images/Organizers/PedroNobrega.jpg" />
+                                    <br>Pedro Nobrega
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d525.5940919661801!2d-48.51836127274975!3d-27.6009228553864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6eafac2391c847f0!2sAudit%C3%B3rio+Jo%C3%A3o+Ernesto+Escosteguy+Castro!5e0!3m2!1spt-BR!2sbr!4v1565316699552!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <section id="contact">
+        <div id="Contato" class="page-section questions">
+            <div class="container text-center" id="questions-con">
+                <div class="questions-title" style="text-align: center">
+                    <i class="fa fa-envelope fa-4x"></i>
+                    <h4 style="color:white">Contato</h4>
+                </div>
+                <h3 class="contact-info">
+                    <a style="color: white;">seccom.ufsc@gmail.com</a>
+                </h3>
+                <h3 class="contact-info">
+                    <a href="https://fb.com/seccom.ufsc" style="color: white"><span class="fa fa-facebook"></span>acebook.com/seccom.ufsc/</a>
+                </h3>
+            </div>
+        </div>
+    </section>
+    <div class="upper scroll-top">
+        <a class="scroll-top"><span style="color: rgba(3, 15, 65, 0.8);" class="fa fa-2x fa-arrow-up"></span></a>
+    </div>
+    <footer class="final-footer">
+        <div class="container footer-con">
+            <ul class="nav-down">
+                <li><a class="scroll-top bottom-nav" href="#">Início</a></li>
+                <li><a class="menu-but bottom-nav" href="#Programação" data-id="timeline">Programação</a></li>
+                <li><a class="menu-but bottom-nav" href="#Palestrantes" data-id="speakers">Palestrantes</a></li>
+                <li><a class="menu-but bottom-nav" href="#Organização" data-id="partners">Organização</a></li>
+                <li><a class="menu-but bottom-nav" href="#Contato" data-id="contact">Contato</a></li>
+                <li><a class="register" href="https://www.sympla.com.br/seccom-2019__632383">Inscreva-se</a></li>
+            </ul>
+            <p style="color:white; font-size:0.8em; padding: 20px 0 0 0; opacity:0.6; text-decoration:underline">Conference sites using this template:</p>
+            <a href="http://www.liderferencja.pl/"><img style="width: 100px; margin-bottom: 30px; opacity:0.8" src="Images/Logo/lider_logo.png"/></a>
+            <br>
+            <br>
+            <p style="color: white">&copy; Copyright <a style="color: white; text-decoration: none;" href="https://pbmchc.github.io">pbmchc</a> 2016-2017</p>
+        </div>
+    </footer>
+</div>
+
+<script src="./Scripts/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./Scripts/bootstrap.min.js"></script>
+<script src="./Scripts/jquery.countdown.js"></script>
+<script src="./Scripts/viewportchecker.min.js"></script>
+<script src="./Scripts/script.js"></script>
+</body>
+</html>

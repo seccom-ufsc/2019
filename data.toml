@@ -1,0 +1,495 @@
+[schedule]
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '30 de Setembro'
+        subtitle = 'Segunda-feira'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Abertura'
+        time = '13:20'
+        icon = 'door-open'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'turicas'
+        time = '13:30'
+
+        [[schedule.days.events]]
+        speaker = 'odorico'
+        time = '14:30'
+        title = 'Técnicas para Redução de Sobrecarga em Sistemas Tolerantes a Falhas'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '15:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '15:40'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '16:10'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        speaker = 'maicon'
+        title = 'Sistemas Multiagentes'
+        time = '16:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'menezes'
+        time = '18:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '19:30'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '19:50'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '20:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'soon'
+        time = '20:40'
+
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '01 de Outubro'
+        subtitle = 'Terça-feira'
+
+        [[schedule.days.events]]
+        type = 'soon'
+        time = '13:30'
+
+        [[schedule.days.events]]
+        speaker = 'marcio'
+        time = '14:30'
+        # Escalonador para multicores em larga escala
+        title = '''
+            BinLPT: Um Escalonador de Laços Paralelos Ciente de Carga de
+            Trabalho para Plataformas Multicore de Larga Escala
+        '''
+        desc = '''
+            A comunidade de Computação de Alto Desempenho (High Performance
+            Computing - HPC) investiga soluções eficientes e escaláveis,
+            visando suprir as demandas computacionais de aplicações de larga
+            escala. Para tanto, particularidades da aplicação e da plataforma
+            são exploradas, de forma que técnicas específicas possam ser
+            aplicadas. Nesse contexto, a irregularidade da aplicação é uma
+            importante característica que deve ser considerada, por exemplo, no
+            escalonamento de iterações de laços paralelos. Nesta palestra,
+            apresentarei uma nova estratégia de escalonamento de laços
+            paralelos ciente da carga de trabalho batizada de BinLPT. Para
+            possibilitar desempenho e flexibilidade superiores, essa estratégia
+            é baseada em algumas características como estimativas da carga de
+            trabalho fornecidas pelo usuário e o uso de uma heurística de
+            escalonamento adaptativa baseada na regra LPT. O BinLPT foi
+            integrado no OpenMP, uma biblioteca de programação paralela
+            largamente utilizada pela academia e indústria. Uma avaliação
+            compreensiva do BinLPT foi efetuada, utilizando simulações,
+            benchmarks sintéticos e kernels de aplicações, com diversas cargas
+            de trabalho. Os resultados com os kernels de aplicações relevaram
+            que BinLPT conduz a um desempenho de até 64.92% superior que as
+            estratégias padrão do OpenMP.
+        '''
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '15:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '15:40'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '16:10'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'special'
+        title = 'Roda de Conversa'
+        subtitle = 'Tema: "Curricularização da Extensão"'
+        time = '16:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'maddog'
+        time = '18:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        time = '19:30'
+        title = 'Lightning Talks!'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        time = '19:50'
+        title = 'Coffee-break'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        time = '20:20'
+        title = 'Lightning Talks!'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        speaker = 'hauck'
+        time = '20:40'
+        title = 'Integrando arquitetura e protejo a equipes ágeis'
+
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '02 de Outubro'
+        subtitle = 'Quarta-feira'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        time = '13:30 - 17:30'
+        title = 'Reservado para Manifestações'
+        icon = 'fist-raised'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'maria'
+        time = '18:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '19:30'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '19:50'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '20:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'special'
+        time = '20:40'
+        title = 'Mesa Redonda'
+        subtitle = ''
+
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '03 de Outubro'
+        subtitle = 'Quinta-feira'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'mario'
+        time = '13:30 - 17:30'
+
+        [[schedule.days.events]]
+        speaker = 'zacchi'
+        time = '14:30'
+        title = 'Green Computing: A Computação Sustentável'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '15:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '15:40'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '16:10'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'special'
+        time = '16:30'
+        title = 'Mesa Redonda'
+        subtitle = 'Conjuntura Atual e Universidade'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'taissa'
+        time = '18:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '19:30'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '19:50'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '20:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        time = '20:40'
+        speaker = 'lingnau'
+        title = 'Product Thinking - Discovering the ultimate product value'
+
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '04 de Outubro'
+        subtitle = 'Sexta-feira'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        time = '13:30 - 17:30'
+        speaker = 'melissa'
+
+        [[schedule.days.events]]
+        speaker = 'raul'
+        time = '14:30'
+        title = 'Fazendo um bom projeto de pesquisa'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '15:20'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Coffee-break'
+        time = '15:40'
+        icon = 'coffee'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Lightning Talks!'
+        time = '16:10'
+        icon = 'bolt'
+
+        [[schedule.days.events]]
+        speaker = 'nicolao'
+        title = 'Física Computacional e Simulação de Materiais'
+        time = '16:30'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Encerramento'
+        time = '17:20'
+        icon = 'door-closed'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:30'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Capture The Flag'
+        time = '18:30'
+        icon = 'flag-checkered'
+
+
+[keynotes]
+    [keynotes.turicas]
+    name = 'Álvaro "Turicas" Justen'
+    short = 'Criador da iniciativa Brasil.IO'
+    bio = '''
+        É programador e professor. Ativista de software livre desde 2004 e
+        programador Python desde 2005, atualmente trabalha capturando,
+        convertendo, limpando e analisando dados em diversos projetos
+        jornalísticos e de inovação cívica brasileiros; é fundador do portal de
+        dados abertos acessíveis Brasil.IO e quando não está programando, dá
+        aulas, viaja a congressos, hipnotiza pessoas, prova e torra cafés
+        especiais.
+    '''
+
+    [keynotes.menezes]
+    name = 'Victor Araújo de Menezes'
+    short = 'Doutorando e Mestre em Direito da Sociedade de Informação e Propriedade Intelectual'
+    bio = '''
+        Doutorando e Mestre em Direito da Sociedade de Informação e Propriedade
+        Intelectual pela UFSC. Também pesquisador do E-GOV UFSC e analista de
+        proteção de dados, atua na área de consultoria empresarial.
+    '''
+
+    [keynotes.maddog]
+    name = 'John "Maddog" Hall'
+    short = 'Presidente da Linux Professional Institute'
+    bio = '''
+        Jon é atual presidente da Linux Professional Institute. Entrou para a
+        indústria da computação em 1969, atuando como programador,
+        administrador de sistemas, gerente de produto, gerente técnico de
+        marketing, consultor, professor de universidade, autor de livros e
+        revistas, e blogger.
+
+        Ao longo dos anos já previa algumas das tendências
+        antes delas se realizarem: o surgimento do Unix
+        como Sistema Operacional, o uso de CD-ROMs para
+        distribuir software, o crescimento do Linux como um
+        sistema comercial, e a necessidade de produtos na
+        nuvem que fossem open-source, ponta-a-ponta e
+        seguros.
+
+        Também participa de várias iniciativas, como a
+        Caninos Loucos, que visa potencializar no Brasil o
+        projeto e manufatura de computadores de chip único.
+
+        No momento, &quot;Maddog&quot; está como CEO na
+        OptDyn a fim de ajudá-la a mudar o mundo.
+    '''
+
+    [keynotes.maria]
+    name = 'Maria Queiroz'
+    short = 'Como utilizar dados para o bem?'
+    company = 'Data for Good'
+    bio = '''
+        Maria Queiroz é consultora de Business Intelligence e já atuou em
+        grandes marcas do varejo como Adidas, Arezzo e Schutz. Já passou pelo
+        setor de telecomunicações, setor público e indústria.
+
+        É apaixonada pelo poder dos dados para potencializar resultados, seja
+        ele para negócios ou para sociedade.
+
+        Já mentorou grandes iniciativas de impacto social, como: Social Good
+        Brasil, InovAtiva Brasil e Technovation Challenge.
+    '''
+
+    [keynotes.mario]
+    name = 'Mário Sérgio Queiroz'
+    short = 'Inclusão nas áreas de CCO/SIN'
+    company = 'Python Brasil'
+    bio = '''
+        Mário Sérgio é gerente do programa de Inovação Cívica da Open Knowledge
+        Brasil. Atual presidente da Associação Python Brasil (APyB). Em 2016
+        foi o responsável pela organização da Conferência Python Brasil[12],
+        que teve sede em Florianópolis-SC. Em 2017 foi nomeado fellow member da
+        Python Software Foundation nos Estados Unidos.
+
+        Pessoas > tecnologia. ❤️
+    '''
+
+    [keynotes.taissa]
+    name = 'Taíssa Vasconcelos'
+    short = 'Empatia Organizacional & Mulheres na Tecnologia'
+    company = 'Linx'
+    bio = '''
+        Taíssa Vasconcelos é uma belenense formada em Publicidade, que já atuou
+        como Social Media, Produtora, Visual Designer e Front-End. Tem várias
+        especializações em Front e UX. Atualmente trabalha na Linx Impulse como
+        Front-End. É apaixonada por animais, praia e acredita que vai ajudar a
+        tornar o mundo um lugar melhor.
+    '''
+
+    [keynotes.melissa]
+    name = 'Melissa Weber Mendonça'
+    short = 'Computação Científica'
+    company = 'UFSC'
+    bio = '''
+        Melissa é professora no Departamento de Matemática na Universidade
+        Federal de Santa Catarina (UFSC), pesquisadora em Matemática Aplicada
+        com foco em Otimização, Análise Numérica e Álgebra Linear Numérica. É
+        também desenvolvedora de Software Científico, entusiasta de Python,
+        LaTeX e software livre em geral.
+    '''
+
+
+[speakers]
+    [speakers.marcio]
+    name = 'Márcio Bastos Castro'
+    bio = '''None.'''
+
+    [speakers.odorico]
+    name = 'Odorico Machado Mendizabal'
+    bio = '''None.'''
+
+    [speakers.maicon]
+    name = 'Maicon Rafael Zatelli'
+    bio = '''None.'''
+
+    [speakers.hauck]
+    name = 'Jean Carlo Rossa Hauck'
+    bio = '''None.'''
+
+    [speakers.zacchi]
+    name = 'Lucas Zacchi de Medeiros'
+    bio = '''None.'''
+
+    [speakers.lingnau]
+    name = 'Roberta Lingnau de Oliveira'
+    bio = '''
+        No seu papel como Project Manager na Cheesecake Labs, Roberta tenta
+        promover o pensamento inovador e adaptativo, alinhado com as
+        necessidades dos clientes, o time de alta performance da CKL e a sua
+        cultura ímpar.
+
+        Com mais de 14 anos de experiência na área de desenvolvimento de
+        software, começou sua carreira na área de QA, o que possibilitou uma
+        visão sistêmica orientada a produto e relacionamento com o cliente.
+        Teve também atuação na área de Governança de Dados, auxiliando a Neoway
+        a alavancar seus esforços acerca da sua qualidade e todos os processos
+        relacionados.
+    '''
+
+    [speakers.raul]
+    name = 'Raul Sidnei Wazlawick'
+    bio = '''None.'''
+
+    [speakers.nicolao]
+    name = 'Lucas Nicolao'
+    bio = '''None.'''
