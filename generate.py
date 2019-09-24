@@ -1,3 +1,4 @@
+import time
 from pathlib import Path
 from pprint import pformat
 
@@ -13,7 +14,11 @@ def generate(data, template: Path, output: Path):
     template = env.get_template(template.name)
 
     with open(output, 'w') as f:
-        f.write(template.render(schedule=data['schedule']))
+        f.write(template.render(
+            schedule=data['schedule'],
+            speakers=data['speakers'],
+            keynotes=data['keynotes'],
+        ))
 
 
 def main():
@@ -23,6 +28,8 @@ def main():
             template=Path('index_template.html'),
             output=Path('index.html')
         )
+
+        print(f'Done. {time.strftime("%d/%m/%y %H:%M")}')
 
 
 if __name__ == '__main__':

@@ -142,152 +142,42 @@
                     <h3 id="Programação" class="section-title">Programação</h3>
                     <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
                         {% for day in schedule.days %}
-                        <center>
-                            <h2>{{ day.title }}</h2>
-                            {{ day.subtitle }}
-                        </center>
-                        {% for event in day.events %}
-                        <div class="conference-main {{ event.type }}">
-                            <h6>{{ event.time }}</h6>
-                            <p>
-                                {% if event.icon %}
-                                <i class="fas fa-{{- event.icon -}} fa-3x"></i>
-                                <br>
-                                {% endif %}
-                                <b>{{ event.title }}</b>
-                            </p>
-                        </div>
-                        {% endfor %}
-                        {% endfor %}
+                            <center class="section-title">
+                                <h2>{{ day.title }}</h2>
+                                {{ day.subtitle }}
+                            </center>
 
-                        <div class="conference-main coffee-break">
-                            <h6>13:20</h6>
-                            <p>
-                                <i class="fas fa-door-open fa-3x"></i>
-                                <br>
-                                <b>Abertura</b>
-                            </p>
-                        </div>
-                        <div class="conference-main keynote">
-                            <h6>13:30 - 14:30</h6>
-                            <p>
-                                <b>Keynote</b>
-                                <h4>Álvaro "Turicas" Justen</h4>
-                                <br>
-                                <i>Criador do brasil.io.</i>
-                            </p>
-                        </div>
-                        <div class="workshop-speaker"></div>
-                        <div class="conference-main">
-                            <h6>14:30 - 15:20</h6>
-                            <p>
-                                <b>Técnicas para Redução de Sobrecarga em
-                                    Sistemas Tolerantes a Falhas</b>
-                                <br>
-                                <i>Odorico Machado Mendizabal</i>
-                            </p>
-                        </div>
-                        <div class="row d-flex flex-row">
-                            <div class="col-sm-4 conference-main lightning-talk">
-                                <h6>15:20 - 15:40</h6>
-                                <p>
-                                    <i class="fas fa-bolt fa-3x"></i>
-                                    <br>
-                                    <b>Lightning Talks!</b>
-                                </p>
+                            <div class="row d-flex flex-row">
+                                {% for event in day.events %}
+                                    <div class="conference-main {{ 'extra col-sm-4' if event.type == 'extra' else event.type }}">
+                                        <h6>{{ event.time }}</h6>
+                                        <p>
+                                            {% if event.type == 'keynote' %}
+                                                {% set speaker = keynotes[event.speaker] %}
+                                                <h4>{{ speaker.name }}</h4>
+                                                <br>
+                                                <p>{{ speaker.short }}</p>
+                                            {% elif event.type == 'soon' %}
+                                                <i>"Soon..."</i>
+                                            {% else %}
+                                                {% if event.icon %}
+                                                <i class="fas fa-{{- event.icon }} fa-3x"></i>
+                                                <br>
+                                                {% endif %}
+                                                <p><b>{{ event.title }}</b></p>
+                                                {% if event.speaker %}
+                                                    {% set speaker = speakers[event.speaker] %}
+                                                    <p>{{ speaker.name }}</p>
+                                                {% endif %}
+                                            {% endif %}
+                                            {% if event.subtitle %}
+                                            <p>{{ event.subtitle }}</p>
+                                            {% endif %}
+                                        </p>
+                                    </div>
+                                {% endfor %}
                             </div>
-                            <div class="col-sm-4 conference-main coffee-break">
-                                <h6 style="color: rgb(13,30,58)">15:40 - 16:10</h6>
-                                <p style="color: rgb(13,30,58)">
-                                    <span class="fa fa-coffee fa-2x"></span>
-                                </p>
-                                <p style="color: rgb(13,30,58)">Coffee break</p>
-                            </div>
-                            <div class="col-sm-4 conference-main lightning-talk">
-                                <h6>16:10 - 16:30</h6>
-                                <p>
-                                    <i class="fas fa-bolt fa-3x"></i>
-                                    <br>
-                                    <b>Lightning Talks!</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="conference-main">
-                            <h6>16:30 - 17:20</h6>
-                            <p>
-                                <b>Sistemas Multiagentes</b>
-                                <br>
-                                <i>Maicon Rafael Zatelli</i>
-                            </p>
-                        </div>
-                        <div class="conference-main keynote">
-                            <h6>18:30 - 19:30</h6>
-                            <p>
-                                <b>Keynote</b>
-                                <h4>Victor Menezes</h4>
-                                <br>
-                                <i>Doutorando e Mestre em Direito da Sociedade de Informação e Propriedade Intelectual.</i>
-                            </p>
-                        </div>
-                        <div class="conference-main">
-                            <h6>20:40 - 21:30</h6>
-                            <p>
-                                <i>Palestra a definir</i>
-                            </p>
-                        </div>
-
-                        <center class="section-title">
-                            <h2>01 de Outubro</h2>
-                            Segunda-feira
-                        </center>
-                        <div class="conference-main keynote">
-                            <h6>13:30 - 14:30</h6>
-                            <p>
-                                <i>Keynote a definir</i>
-                            </p>
-                        </div>
-                        <div class="workshop-speaker"></div>
-                        <div class="conference-main">
-                            <h6>14:30 - 15:20</h6>
-                            <p>
-                                <b>Escalonador para <i>multicores</i> em larga escala</b>
-                                <br>
-                                <i>Márcio Bastos Castro</i>
-                            </p>
-                        </div>
-                        <div class="row d-flex flex-row">
-                            <div class="col-sm-4 conference-main lightning-talk">
-                                <h6>15:20 - 15:40</h6>
-                                <p>
-                                    <i class="fas fa-bolt fa-3x"></i>
-                                    <br>
-                                    <b>Lightning Talks!</b>
-                                </p>
-                            </div>
-                            <div class="col-sm-4 conference-main coffee-break">
-                                <h6 style="color: rgb(13,30,58)">15:40 - 16:10</h6>
-                                <p style="color: rgb(13,30,58)">
-                                    <span class="fa fa-coffee fa-2x"></span>
-                                </p>
-                                <p style="color: rgb(13,30,58)">Coffee break</p>
-                            </div>
-                            <div class="col-sm-4 conference-main lightning-talk">
-                                <h6>16:10 - 16:30</h6>
-                                <p>
-                                    <i class="fas fa-bolt fa-3x"></i>
-                                    <br>
-                                    <b>Lightning Talks!</b>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="conference-main">
-                            <h6>16:30 - 17:20</h6>
-                            <p>
-                                <b>Palestra</b>
-                                <br>
-                                <i>A definir</i>
-                            </p>
-                        </div>
+                        {% endfor %}
                     </div>
 
                     <!--WORKSHOPS-->

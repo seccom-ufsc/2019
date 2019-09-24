@@ -78,6 +78,11 @@ h6 {
     z-index:1000;
     background-color: rgb(247,247,247);
 }
+
+#timeline .section-title {
+    margin-top: 8em;
+}
+
 .section-title {
     padding-top: 2em;
     margin-bottom: 3em;
@@ -418,6 +423,18 @@ h6 {
     color: white;
 }
 
+.extra {
+    background: none;
+}
+
+.extra * {
+    color: rgb(13,30,58) !important;
+}
+
+.special {
+    background: #2f5a29;
+}
+
 .keynote {
     background: rgba(98, 54, 101, .8);
 }
@@ -425,22 +442,6 @@ h6 {
 .keynote * {
     color: white;
     font-weight: bold;
-}
-
-.coffee-break {
-    background: none;
-}
-
-.coffee-break * {
-    color: rgb(13,30,58) !important;
-}
-
-.lightning-talk {
-    background: none;
-}
-
-.lightning-talk * {
-    color: rgb(13,30,58) !important;
 }
 
 /* WORKSHOP NAVIGATION TABS
