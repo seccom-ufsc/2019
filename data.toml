@@ -44,6 +44,12 @@
         time = '16:30'
 
         [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
         type = 'keynote'
         speaker = 'menezes'
         time = '18:30'
@@ -136,6 +142,12 @@
         time = '16:30'
 
         [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
         type = 'keynote'
         speaker = 'maddog'
         time = '18:30'
@@ -210,14 +222,13 @@
 
         [[schedule.days.events]]
         type = 'keynote'
+        speaker = 'mario'
         time = '13:30 - 17:30'
-        title = 'Reservado para Manifestações'
-        icon = 'fist-raised'
 
         [[schedule.days.events]]
-        speaker = 'odorico'
+        speaker = 'zacchi'
         time = '14:30'
-        title = 'Técnicas para Redução de Sobrecarga em Sistemas Tolerantes a Falhas'
+        title = 'Green Computing: A Computação Sustentável'
 
         [[schedule.days.events]]
         type = 'extra'
@@ -238,13 +249,20 @@
         icon = 'bolt'
 
         [[schedule.days.events]]
-        speaker = 'maicon'
-        title = 'Sistemas Multiagentes'
+        type = 'special'
         time = '16:30'
+        title = 'Mesa Redonda'
+        subtitle = 'Conjuntura Atual e Universidade'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
 
         [[schedule.days.events]]
         type = 'keynote'
-        speaker = 'menezes'
+        speaker = 'taissa'
         time = '18:30'
 
         [[schedule.days.events]]
@@ -266,8 +284,9 @@
         icon = 'bolt'
 
         [[schedule.days.events]]
-        type = 'soon'
         time = '20:40'
+        speaker = 'lingnau'
+        title = 'Product Thinking - Discovering the ultimate product value'
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
@@ -275,15 +294,14 @@
         subtitle = 'Sexta-feira'
 
         [[schedule.days.events]]
-        type = 'extra'
+        type = 'keynote'
         time = '13:30 - 17:30'
-        title = 'Reservado para Manifestações'
-        icon = 'fist-raised'
+        speaker = 'melissa'
 
         [[schedule.days.events]]
-        speaker = 'odorico'
+        speaker = 'raul'
         time = '14:30'
-        title = 'Técnicas para Redução de Sobrecarga em Sistemas Tolerantes a Falhas'
+        title = 'Fazendo um bom projeto de pesquisa'
 
         [[schedule.days.events]]
         type = 'extra'
@@ -304,36 +322,27 @@
         icon = 'bolt'
 
         [[schedule.days.events]]
-        speaker = 'maicon'
-        title = 'Sistemas Multiagentes'
+        speaker = 'nicolao'
+        title = 'Física Computacional e Simulação de Materiais'
         time = '16:30'
 
         [[schedule.days.events]]
-        type = 'keynote'
-        speaker = 'menezes'
+        type = 'extra'
+        title = 'Encerramento'
+        time = '17:20'
+        icon = 'door-closed'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Janta'
+        time = '17:30'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        title = 'Capture The Flag'
         time = '18:30'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '19:30'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Coffee-break'
-        time = '19:50'
-        icon = 'coffee'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        title = 'Lightning Talks!'
-        time = '20:20'
-        icon = 'bolt'
-
-        [[schedule.days.events]]
-        type = 'soon'
-        time = '20:40'
+        icon = 'flag-checkered'
 
 
 [keynotes]
@@ -401,6 +410,44 @@
         Brasil, InovAtiva Brasil e Technovation Challenge.
     '''
 
+    [keynotes.mario]
+    name = 'Mário Sérgio Queiroz'
+    short = 'Inclusão nas áreas de CCO/SIN'
+    company = 'Python Brasil'
+    bio = '''
+        Mário Sérgio é gerente do programa de Inovação Cívica da Open Knowledge
+        Brasil. Atual presidente da Associação Python Brasil (APyB). Em 2016
+        foi o responsável pela organização da Conferência Python Brasil[12],
+        que teve sede em Florianópolis-SC. Em 2017 foi nomeado fellow member da
+        Python Software Foundation nos Estados Unidos.
+
+        Pessoas > tecnologia. ❤️
+    '''
+
+    [keynotes.taissa]
+    name = 'Taíssa Vasconcelos'
+    short = 'Empatia Organizacional & Mulheres na Tecnologia'
+    company = 'Linx'
+    bio = '''
+        Taíssa Vasconcelos é uma belenense formada em Publicidade, que já atuou
+        como Social Media, Produtora, Visual Designer e Front-End. Tem várias
+        especializações em Front e UX. Atualmente trabalha na Linx Impulse como
+        Front-End. É apaixonada por animais, praia e acredita que vai ajudar a
+        tornar o mundo um lugar melhor.
+    '''
+
+    [keynotes.melissa]
+    name = 'Melissa Weber Mendonça'
+    short = 'Computação Científica'
+    company = 'UFSC'
+    bio = '''
+        Melissa é professora no Departamento de Matemática na Universidade
+        Federal de Santa Catarina (UFSC), pesquisadora em Matemática Aplicada
+        com foco em Otimização, Análise Numérica e Álgebra Linear Numérica. É
+        também desenvolvedora de Software Científico, entusiasta de Python,
+        LaTeX e software livre em geral.
+    '''
+
 
 [speakers]
     [speakers.marcio]
@@ -417,4 +464,32 @@
 
     [speakers.hauck]
     name = 'Jean Carlo Rossa Hauck'
+    bio = '''None.'''
+
+    [speakers.zacchi]
+    name = 'Lucas Zacchi de Medeiros'
+    bio = '''None.'''
+
+    [speakers.lingnau]
+    name = 'Roberta Lingnau de Oliveira'
+    bio = '''
+        No seu papel como Project Manager na Cheesecake Labs, Roberta tenta
+        promover o pensamento inovador e adaptativo, alinhado com as
+        necessidades dos clientes, o time de alta performance da CKL e a sua
+        cultura ímpar.
+
+        Com mais de 14 anos de experiência na área de desenvolvimento de
+        software, começou sua carreira na área de QA, o que possibilitou uma
+        visão sistêmica orientada a produto e relacionamento com o cliente.
+        Teve também atuação na área de Governança de Dados, auxiliando a Neoway
+        a alavancar seus esforços acerca da sua qualidade e todos os processos
+        relacionados.
+    '''
+
+    [speakers.raul]
+    name = 'Raul Sidnei Wazlawick'
+    bio = '''None.'''
+
+    [speakers.nicolao]
+    name = 'Lucas Nicolao'
     bio = '''None.'''
