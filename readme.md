@@ -22,3 +22,8 @@ Por fim, para hostear localmente (localhost:8080):
 ```console
 $ python -m http.server
 ```
+
+Alterar dados
+-------------
+
+Todos os dados estão descritos no arquivo [data.toml](data.toml).
