@@ -125,22 +125,13 @@
                 </div>
             </div>
         </div>
-        <!-- Acho que a gente nao quer isso aqui -->
-        <!-- <section id="red">
-            <div style="display: table; width: 100%; height: 100%; text-align: center" class="container">
-                <div style="display: table-cell; vertical-align: middle;">
-                    <p class="red-info">Come and earn yourself a chance to win great prizes sponosored by our partners!</p>
-                    <img src="Images/heart.png" class="beat" />
-                    <p class="red-info">Prizes are sponsored by:  <a style="color: white; text-decoration: underline; font-size: 1.2em">Partner</a> and <a style="color: white; text-decoration: underline; font-size: 1.2em">Partner</a>.</p>
-                </div>
-            </div>
-        </section> -->
         <div class="page-section" id="features">
             <div class="container">
                 <section id="timeline">
                     <!--TIMELINE-->
                     <h3 id="Programação" class="section-title">Programação</h3>
                     <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
+                        <center><b>{{ schedule.message }}</b></center>
                         <div class="row d-flex flex-row">
                         {% for day in schedule.days %}
                             <div class="col">

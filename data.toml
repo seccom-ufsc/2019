@@ -1,4 +1,9 @@
 [schedule]
+    message = '''
+        Atenção: devido às atividades, os horários da tarde para Quarta e
+        Quinta-feira podem ser trocados.
+    '''
+
     # --------------------------------------------------------------------------
     [[schedule.days]]
         title = '30 de Setembro'
@@ -270,6 +275,9 @@
 
         [[schedule.days.events]]
         type = 'break'
+        time = '8:20 - 12:30'
+        title = 'Maratona de Programação'
+        icon = 'running'
 
         [[schedule.days.events]]
         type = 'keynote'
