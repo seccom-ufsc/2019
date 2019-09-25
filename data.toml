@@ -511,10 +511,25 @@
         relacionados.
     '''
 
+    [[contacts]]
+    linkedin = 'https://br.linkedin.com/in/robertalingnau'
+
+
     [speakers.raul]
     name = 'Raul Sidnei Wazlawick'
     bio = '''None.'''
 
     [speakers.nicolao]
     name = 'Lucas Nicolao'
-    bio = '''None.'''
+    bio = '''
+        É Professor Adjunto do Departamento de Física da Universidade Federal
+        de Santa Catarina, onde leciona disciplinas relacionadas a Física
+        Computacional, administra o laboratório de informática e realizo
+        pesquisa em Física Teórica/Computacional nas áreas de Física
+        Estatística e Física da Matéria Condensada. Atualmente é orientador de
+        mestrado e doutorado junto ao Programa de Pós-Graduação em Física da
+        UFSC.
+    '''
+
+    [[contacts]]
+    lattes = 'http://lattes.cnpq.br/7986836140787484'
