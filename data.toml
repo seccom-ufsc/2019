@@ -259,7 +259,7 @@
         [[schedule.days.events]]
         type = 'keynote'
         speaker = 'mario'
-        time = '13:30 - 17:30'
+        time = '13:30'
 
         [[schedule.days.events]]
         speaker = 'zacchi'
@@ -328,7 +328,7 @@
 
         [[schedule.days.events]]
         type = 'keynote'
-        time = '13:30 - 17:30'
+        time = '13:30'
         speaker = 'melissa'
 
         [[schedule.days.events]]
