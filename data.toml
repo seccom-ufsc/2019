@@ -277,7 +277,10 @@
         type = 'break'
         time = '8:20 - 12:30'
         title = 'Maratona de Programação'
-        icon = 'running'
+        icon = [
+            'running',
+            'desktop',
+        ]
 
         [[schedule.days.events]]
         type = 'keynote'
