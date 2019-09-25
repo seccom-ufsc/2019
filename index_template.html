@@ -85,9 +85,6 @@
                 INSCREVA-SE<span style="color:white; margin-left: 7px" class="fa fa-pencil"></span>
             </a>
         </div>
-        <!-- <div id="evenea-l" class="col-sm-4">
-                <p id="evenea-txt" class="uppercased">INSCREVA-SE</p>
-        </div> -->
     </div>
     <div id="wrapper">
         <div class="page-section" id="feedback">
@@ -127,11 +124,41 @@
         </div>
         <div class="page-section" id="features">
             <div class="container">
+                <section id="contests">
+                    <h3 id="Competições" class="section-title">Competições</h3>
+                    <div class="row d-flex flex-row">
+                        {% for contest in contests %}
+                            <div class="col">
+                                <h4 class="text-center">
+                                {% if contest.icon %}
+                                    {% if contest.icon|is_list %}
+                                        {% for icon in contest.icon %}
+                                            <i class="fas fa-{{- icon }} fa-3x"></i>
+                                        {% endfor %}
+                                    {% else %}
+                                        <i class="fas fa-{{- contest.icon }} fa-3x"></i>
+                                    {% endif %}
+                                <br>
+                                {% endif %}{{ contest.title }}</h4>
+                                <p>{{ contest.about }}</p>
+                                <center>
+                                    <a
+                                        href="{{ contest.subscribe }}"
+                                        class="btn btn-outline-dark active"
+                                        role="button">
+                                        INSCREVA SUA EQUIPE&nbsp;<i class="fa fa-pencil"></i>
+                                    </a>
+                                </center>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+
                 <section id="timeline">
                     <!--TIMELINE-->
                     <h3 id="Programação" class="section-title">Programação</h3>
                     <div style="width: 100%; border-bottom: 3px dashed rgb(222,222,222); padding-bottom: 30px; margin-bottom: 30px;">
-                        <center><b>{{ schedule.message }}</b></center>
+                        <center><h4><b>{{ schedule.message }}</b></h4></center>
                         <div class="row d-flex flex-row">
                         {% for day in schedule.days %}
                             <div class="col">

@@ -1,3 +1,46 @@
+# Contests
+    [[contests]]
+    title = 'Maratona de Programação'
+    icon = [
+        'running',
+        'desktop',
+    ]
+    about = '''
+        Na SECCOM 2019 teremos, pela segunda edição seguida, uma maratona de
+        programação!
+
+        Nela, os alunos devem se organizar em times de 2 a 3 membros e terão
+        por volta de 4 horas para resolver uma lista de problemas, que
+        abordarão conhecimento de computação e programação. Assim, a Maratona
+        promoverá a integração entre os alunos de turmas, turnos e anos
+        diferentes, permitindo ao aluno exercitar a criatividade, trabalho em
+        equipe, raciocínio lógico, dentre outras habilidades requeridas para um
+        bom programador, além de incentivar a participação dos alunos na
+        Maratona de Programação.
+    '''
+    day = '04 de Outubro'
+    time = '8:20'
+    subscribe = 'https://forms.gle/hnur18b3Pg54eJ5r8'
+
+    [[contests]]
+    title = 'Capture The Flag'
+    icon = 'flag-checkered'
+    about = '''
+        Para quem gostaria de se aventurar com segurança, invasões,
+        criptografia e até mesmo engenharia reversa, há uma competição que se
+        encaixa perfeitamente: o CTF (Capture The Flag). Elaborado em moldes
+        semelhantes a uma maratona de programação, o CTF inclui desafios que
+        lidam com diversos tipos de exploits de segurança, a fim de que seus
+        participantes tanto aprendam quanto ponham seus conhecimentos de
+        hacking a prova!
+
+        Você pode ler mais sobre o CTF em: <a
+        href="https://ctftime.org/ctf-wtf/">https://ctftime.org/ctf-wtf/</a>.
+    '''
+    day = '04 de Outubro'
+    time = '18:30'
+    subscribe = 'https://forms.gle/T8dh3hHvJzQxYRbV7'
+
 [schedule]
     message = '''
         Atenção: devido às atividades, os horários da tarde para Quarta e
