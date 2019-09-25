@@ -44,8 +44,8 @@
 
 [schedule]
     message = '''
-        Atenção: devido às atividades, os horários da tarde para Quarta e
-        Quinta-feira podem ser trocados.
+        Atenção: devido às atividades de greve, os horários da tarde para
+        Quarta e Quinta-feira podem ser trocados.
     '''
 
     # --------------------------------------------------------------------------
