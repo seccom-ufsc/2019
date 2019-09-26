@@ -19,6 +19,8 @@ def generate(data, template: Path, output: Path):
             keynotes=data['keynotes'],
             schedule=data['schedule'],
             speakers=data['speakers'],
+            subscribe=data['subscribe'],
+            workshops=data['workshops'],
         ))
 
 

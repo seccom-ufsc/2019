@@ -412,7 +412,7 @@ h6 {
   margin-left: 3.5px;
 }
 
-.conference-main {
+.conference-main, .workshop-about {
     padding: 1em;
     margin: 0.2em auto;
     background-color: rgba(36,54,101, 0.8);
@@ -477,6 +477,46 @@ h6 {
 .keynote * {
     color: white;
     font-weight: bold;
+}
+
+.workshops col {
+    padding-left: none;
+    padding-right: none;
+    min-height: 16em;
+}
+
+.workshop-about {
+    margin: 0.2em auto;
+    max-width: 100%;
+}
+
+.workshop-timeline {
+    margin: 0.2em auto;
+}
+
+.workshop-about h6, .workshop-timeline h6 {
+    color: white;
+    font-weight: bold;
+}
+
+.workshop-about p, .workshop-timeline p {
+    color: white;
+}
+
+.workshop-time {
+    color: white;
+    background: #4f7a49;
+    padding: 1em;
+    margin: 0.2em;
+    text-align: center;
+}
+
+.workshop-time:first-child {
+    margin-top: 0;
+}
+
+.workshop-time:last-child {
+    margin-bottom: 0;
 }
 
 /* WORKSHOP NAVIGATION TABS

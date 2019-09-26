@@ -1,3 +1,6 @@
+[subscribe]
+    workshop = 'https://docs.google.com/forms/d/e/1FAIpQLScaSQj9MBJJsgE77ef11SWf10cuyUUajxt0GeZkRkNghr4JZQ/viewform'
+
 # Contests
     [[contests]]
     title = 'Maratona de Programação'
@@ -370,6 +373,48 @@
         icon = 'flag-checkered'
 
 
+[workshops]
+    [[workshops.'Período Matutino']]
+    title = 'Minicurso de Python'
+    speaker = 'tarcisio'
+
+    [[workshops.'Período Matutino'.days]]
+    name = '30 de Setembro'
+    weekday = 'Segunda-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Matutino'.days]]
+    name = '01 de Outubro'
+    weekday = 'Terça-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Matutino']]
+    title = 'Programação Linear e Inteira'
+    speaker = ['alvaro', 'santiago']
+
+    [[workshops.'Período Matutino'.days]]
+    name = '30 de Setembro'
+    weekday = 'Segunda-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Matutino'.days]]
+    name = '01 de Outubro'
+    weekday = 'Terça-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops."Período Noturno"]]
+    title = 'Minicurso de Git'
+    speaker = 'tarcisio'
+    days = [
+        '30 de Setembro (Segunda-feira)',
+        '01 de Outubro (Terça-feira)',
+    ]
+
+
 [keynotes]
     [keynotes.turicas]
     name = 'Álvaro "Turicas" Justen'
@@ -533,3 +578,21 @@
 
     [[contacts]]
     lattes = 'http://lattes.cnpq.br/7986836140787484'
+
+    [speakers.tarcisio]
+    name = 'Tarcísio Eduardo Moreira Crocomo'
+    bio = '''
+        None.
+    '''
+
+    [speakers.alvaro]
+    name = 'Álvaro Junio Pereira Franco'
+    bio = '''
+        None.
+    '''
+
+    [speakers.santiago]
+    name = 'Rafael de Santiago'
+    bio = '''
+        None.
+    '''

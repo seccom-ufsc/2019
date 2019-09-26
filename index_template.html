@@ -218,105 +218,74 @@
                     </div>
 
                     <!--WORKSHOPS-->
-                    <h3 style="margin-bottom: 50px;" class="section-title">Oficinas</h3>
-                    <section id="workshops">
-                        <center style="padding-top: 2em;">
-                            <b>Em breve.</b>
-                            <br>
-                            Gostaria de ofertar uma oficina na SECCOM?
-                            <a href="https://speakerfight.com/events/seccom-2019-minicursos/">Submeta sua proposta!</a>
-                        </center>
-                        <!--
-                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
-                            <span class="track">Track#1</span>
-                        </div>
-                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
-                            <span class="track">Track#2</span>
-                        </div>
-                        <div class="col-sm-4" style="text-align: center; padding-bottom: 15px;">
-                            <span class="track">Track#3</span>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <div class="workshop-desc">
-                                    <h3>12:15 - 13:00</h3>
-                                    <p>Workshop#1</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="workshop-desc">
-                                    <h3>12:15 - 13:00</h3>
-                                    <p>Workshop#2</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                            </div>
-                            <div class="col-sm-4">
-                                <div class="workshop-desc" style="height: 230px; display: table; width: 100%;">
-                                    <div style="display: table-cell; vertical-align: middle;">
-                                        <h3>12:15 - 14:00</h3>
-                                        <p>Workshop#3</p>
+                    <h3 class="section-title">Oficinas</h3>
+                    <center>
+                        <a
+                            href="{{ subscribe['workshop'] }}"
+                            class="btn btn-outline-dark active"
+                            role="button">
+                            INSCREVA-SE&nbsp;<i class="fa fa-pencil"></i>
+                        </a>
+                    </center>
+                    <section class="workshops">
+                        <div class="row d-flex flex-column">
+                            <div class="col">
+                                <div class="row d-flex flex-row">
+                                    <div class="workshop-about col">
+                                        Hey
+                                    </div>
+                                    <div class="workshop-timeline col">
+                                        <div style="min-height: 100%;" class="row d-flex flex-column">
+                                            <div class="workshop-time col">
+                                                Arnold
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
                             </div>
-                            <div class="col-sm-8" style="margin-top: -110px">
-                                <div class="workshop-desc">
-                                    <h3>13:00 - 14:00</h3>
-                                    <p>Workshop#4</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                            </div>
-                        </div>
-                        --!>
-                </section>
-                <!--WORKSHOPS MOBILE-->
-                <!--
-                <section id="workshops-mobile">
-                    <div class="container">
-                        <ul class="nav nav-tabs bkmarks" role="tablist">
-                            <li role="presentation" class="active"><a href="#workshops1" aria-controls="workshops1" role="tab" data-toggle="tab">Track#1</a></li>
-                            <li role="presentation"><a href="#lectures" aria-controls="lectures" role="tab" data-toggle="tab">Track#2</a></li>
-                            <li role="presentation"><a href="#workshops2" aria-controls="workshops2" role="tab" data-toggle="tab">Track#3</a></li>
-                        </ul>
-                        <div class="tab-content">
-                            <div class="tab-pane active in" id="workshops1" role="tabpanel">
-                                <div class="workshop-desc">
-                                    <h3>12:15 - 13:00</h3>
-                                    <p>Workshop#1</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                                <div class="workshop-desc">
-                                    <h3>13:00 - 14:00</h3>
-                                    <p>Workshop#4</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                            </div>
-                            <div class="tab-pane" id="lectures" role="tabpanel">
-                                <div class="workshop-desc">
-                                    <h3>12:15 - 13:00</h3>
-                                    <p>Workshop#2</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                                <div class="workshop-desc">
-                                    <h3>13:00 - 14:00</h3>
-                                    <p>Workshop#4</p>
-                                </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
-                            </div>
-                            <div class="tab-pane" id="workshops2" role="tabpanel">
-                                <div class="workshop-desc rowspan" style="height: 195px; display: table; width: 100%;">
-                                    <div style="display: table-cell; vertical-align: middle;">
-                                        <h3>12:15 - 14:00</h3>
-                                        <p>Workshop#3</p>
+                            <div class="col">
+                                <div class="row d-flex flex-row">
+                                    <div class="workshop-about col">
+                                        Hey
+                                    </div>
+                                    <div class="workshop-timeline col">
+                                        Arnold
                                     </div>
                                 </div>
-                                <div class="workshop-speaker">Speaker (Company)</div>
                             </div>
                         </div>
-                    </div>
+                        {% for period, events in workshops.items() %}
+                        <h4 class="section-title">{{ period }}</h4>
+                        <div class="row d-flex flex-row">
+                            {% for workshop in events %}
+                            <div class="workshop-about col">
+                                <h6>{{ workshop.title }}</h6>
+                                <p>
+                                    {% set speaker = workshop.speaker %}
+                                    {% if speaker|is_list %}
+                                        {% for s in speaker %}
+                                            {{ speakers[s].name }}<br>
+                                        {% endfor %}
+                                    {% else %}
+                                        {{ speakers[speaker].name }}
+                                    {% endif %}
+                                </p>
+                                <div class="col d-flex flex-column" style="padding: 0.1em 0.2em">
+                                    {% for day in workshop.days %}
+                                    <div class="col workshop-time">
+                                        <h6><b>Dia {{ loop.index }}: {{ day.name }}</b></h6>
+                                        <p>
+                                            {{ day.weekday }}<br>
+                                            <b>Horário:</b> {{ day.time }}
+                                        </p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        {% endfor %}
                 </section>
-                --!>
             </section>
         </div>
         <section id="speakers" style="background-color: rgb(247,247,247)">
