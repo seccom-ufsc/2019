@@ -479,10 +479,10 @@ h6 {
     font-weight: bold;
 }
 
-.workshops col {
+.workshops > .container > .row >  .col {
     padding-left: none;
     padding-right: none;
-    min-height: 16em;
+    min-height: 28em;
 }
 
 .workshop-about {
@@ -499,7 +499,7 @@ h6 {
     font-weight: bold;
 }
 
-.workshop-about p, .workshop-timeline p {
+.workshop-about * {
     color: white;
 }
 
@@ -507,7 +507,7 @@ h6 {
     color: white;
     background: #4f7a49;
     padding: 1em;
-    margin: 0.2em;
+    margin: 0.1em 0.2em;
     text-align: center;
 }
 

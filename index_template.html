@@ -228,61 +228,52 @@
                         </a>
                     </center>
                     <section class="workshops">
-                        <div class="row d-flex flex-column">
-                            <div class="col">
-                                <div class="row d-flex flex-row">
-                                    <div class="workshop-about col">
-                                        Hey
-                                    </div>
-                                    <div class="workshop-timeline col">
-                                        <div style="min-height: 100%;" class="row d-flex flex-column">
-                                            <div class="workshop-time col">
-                                                Arnold
+                        {% for period, events in workshops.items() %}
+                        <h4 class="section-title">{{ period }}</h4>
+                        <div class="container">
+                            <div class="row d-flex flex-column">
+                                {% for workshop in events %}
+                                <div class="col">
+                                    <div class="row d-flex flex-row">
+                                        <div class="workshop-about col">
+                                            <h6>{{ workshop.title }}</h6>
+                                            <p>
+                                                {% set speaker = workshop.speaker %}
+                                                {% if speaker|is_list %}
+                                                    {% for s in speaker %}
+                                                        {{ speakers[s].name }}<br>
+                                                    {% endfor %}
+                                                {% else %}
+                                                    {{ speakers[speaker].name }}
+                                                {% endif %}
+                                            </p>
+                                            <p style="text-align: left;">
+                                                {{ workshop.about }}
+                                                <br><br>
+                                                <b>
+                                                    Conhecimentos necessários:
+                                                </b> {{ workshop.knowledge
+                                                        if workshop.knowledge
+                                                        else 'Nenhum' }}
+                                            </p>
+                                        </div>
+                                        <div class="workshop-timeline col">
+                                            <div style="min-height: 100%;" class="row d-flex flex-column">
+                                                {% for day in workshop.days %}
+                                                <div class="workshop-time col">
+                                                    <h6><b>{{ loop.index }}º Dia: {{ day.name }}</b></h6>
+                                                    <p>
+                                                        {{ day.weekday }}<br>
+                                                        <b>Horário:</b> {{ day.time }}
+                                                    </p>
+                                                </div>
+                                                {% endfor %}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                {% endfor %}
                             </div>
-                            <div class="col">
-                                <div class="row d-flex flex-row">
-                                    <div class="workshop-about col">
-                                        Hey
-                                    </div>
-                                    <div class="workshop-timeline col">
-                                        Arnold
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {% for period, events in workshops.items() %}
-                        <h4 class="section-title">{{ period }}</h4>
-                        <div class="row d-flex flex-row">
-                            {% for workshop in events %}
-                            <div class="workshop-about col">
-                                <h6>{{ workshop.title }}</h6>
-                                <p>
-                                    {% set speaker = workshop.speaker %}
-                                    {% if speaker|is_list %}
-                                        {% for s in speaker %}
-                                            {{ speakers[s].name }}<br>
-                                        {% endfor %}
-                                    {% else %}
-                                        {{ speakers[speaker].name }}
-                                    {% endif %}
-                                </p>
-                                <div class="col d-flex flex-column" style="padding: 0.1em 0.2em">
-                                    {% for day in workshop.days %}
-                                    <div class="col workshop-time">
-                                        <h6><b>Dia {{ loop.index }}: {{ day.name }}</b></h6>
-                                        <p>
-                                            {{ day.weekday }}<br>
-                                            <b>Horário:</b> {{ day.time }}
-                                        </p>
-                                    </div>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                            {% endfor %}
                         </div>
                         {% endfor %}
                 </section>

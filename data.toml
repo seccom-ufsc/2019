@@ -377,6 +377,11 @@
     [[workshops.'Período Matutino']]
     title = 'Minicurso de Python'
     speaker = 'tarcisio'
+    about = '''
+        Minicurso introdutório de Python, com ênfase nas ferramentas
+        necessárias para iniciar um projeto em Python e na sintaxe básica e
+        utilidades diversas da linguagem.
+    '''
 
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
@@ -393,6 +398,21 @@
     [[workshops.'Período Matutino']]
     title = 'Programação Linear e Inteira'
     speaker = ['alvaro', 'santiago']
+    knowledge = 'Introdução à programação e álgebra linear.'
+    about = '''
+        Programação Linear e Inteira são áreas da Computação que contribuem com
+        soluções para problemas de otimização. Tipicamente temos um problema
+        onde queremos maximizar ou minimizar uma função linear sujeita a
+        algumas restrições lineares. Há formas de medir a qualidade de cada
+        solução. Por isso, é esperado que as soluções sugeridas sejam
+        valorizadas.
+
+        <br><br>
+        Neste minicurso apresentaremos:<br>
+        1. Alguns problemas de otimização;<br>
+        2. Uma modelagem para problemas de otimização; e<br>
+        3. O uso de uma ferramenta que resolve problemas de otimização.
+    '''
 
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
@@ -406,13 +426,103 @@
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
-    [[workshops."Período Noturno"]]
+    [[workshops.'Período Matutino']]
+    title = 'Introdução a computação quântica utilizando o simulador QSystem'
+    speaker = 'stark'
+    knowledge = 'É recomendado um conhecimento básico de álgebra linear e Python.'
+    about = '''
+        A computação quântica toma proveito de fenômenos da mecânica quântica
+        para resolver alguns problemas de maneira mais eficiente do que a
+        computação clássica.
+
+        Este minicurso aborda conceitos básicos de computação quântica, como, bit
+        quântico, superposição, entrelaçamento, medida e representação. Sendo todos
+        eles vistos na prática com o simulador quântico QSystem para Python.
+    '''
+
+    [[workshops.'Período Matutino'.days]]
+    name = '02 de Outubro'
+    weekday = 'Quarta-feira'
+    time = '09:10 às 12:00'
+    credits = '3 créditos'
+
+    [[workshops.'Período Matutino']]
+    title = 'Matemática Funcional em Scheme'
+    speaker = 'gbaio'
+    knowledge = 'É necessário conhecimento prévio de programação, não necessariamente do paradigma funcional.'
+    about = '''
+        Scheme é um dos principais "dialetos" de Lisp, que adere ao paradigma
+        funcional e é a segunda linguagem de programação mais antiga ainda
+        amplamente utilizada.
+
+        Devido à sua flexibilidade e simplicidade, Scheme é usada para extender
+        e customizar o comportamento de outros softwares e foi adotada como a
+        linguagem de scripting oficial do GNU Project.
+
+
+        <br>
+        O minicurso abordará algumas técnicas de programação funcional em
+        Scheme para algoritmos matemáticos e métodos numéricos, incluindo:<br>
+        - Tipos de recursão e tail call optimization<br>
+        - Abstração com funções de alta ordem e closures<br>
+        - Paradigma de fluxo de dados (streams): ao infinito e além com lazy evaluation<br>
+        - Processamento simbólico e metalinguagem
+    '''
+
+    [[workshops.'Período Matutino'.days]]
+    name = '02 de Outubro'
+    weekday = 'Quarta-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Matutino'.days]]
+    name = '03 de Outubro'
+    weekday = 'Quinta-feira'
+    time = '10:10 às 12:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Noturno']]
     title = 'Minicurso de Git'
     speaker = 'tarcisio'
-    days = [
-        '30 de Setembro (Segunda-feira)',
-        '01 de Outubro (Terça-feira)',
-    ]
+    about = ''''''
+
+    [[workshops.'Período Noturno'.days]]
+    name = '30 de Setembro'
+    weekday = 'Segunda-feira'
+    time = '20:20 às 22:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Noturno'.days]]
+    name = '02 de Outubro'
+    weekday = 'Quarta-feira'
+    time = '20:20 às 22:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Noturno']]
+    title = "' or 1=1: Introdução a vulnerabilidades em aplicações Web"
+    speaker = 'diego'
+    knowledge = 'Conhecimento básico em desenvolvimento para web e conhecimento básico em Linux.'
+    about = '''
+        Sendo atualmente o modelo de aplicação mais difundido no mercado, as
+        aplicações web vão desde sistemas complexos como e-commerces até
+        simples APIs. Conhecer e saber como explorar as vulnerabilidades que
+        uma aplicação web pode ter é vital para todo profissional que atua ou
+        deseja atuar nas áreas relacionadas ao ecossistema da web, seja para
+        detectá-las durante uma análise de segurança ou para previnir que as
+        mesmas aconteçam durante o processo de desenvolvimento.
+    '''
+
+    [[workshops.'Período Noturno'.days]]
+    name = '02 de Outubro'
+    weekday = 'Terça-feira'
+    time = '20:20 às 22:00'
+    credits = '2 créditos'
+
+    [[workshops.'Período Noturno'.days]]
+    name = '04 de Outubro'
+    weekday = 'Quinta-feira'
+    time = '20:20 às 22:00'
+    credits = '2 créditos'
 
 
 [keynotes]
@@ -596,3 +706,15 @@
     bio = '''
         None.
     '''
+
+    [speakers.diego]
+    name = 'Diego Marques'
+    bio = '''None.'''
+
+    [speakers.stark]
+    name = 'Evandro Chagas Ribeiro da Rosa'
+    bio = '''None.'''
+
+    [speakers.gbaio]
+    name = "Gabriel Baiocchi Sant'Anna"
+    bio = '''None.'''
