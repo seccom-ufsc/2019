@@ -530,13 +530,13 @@
     '''
 
     [[workshops.'Período Noturno'.days]]
-    name = '02 de Outubro'
+    name = '01 de Outubro'
     weekday = 'Terça-feira'
     time = '20:20 às 22:00'
     credits = '2 créditos'
 
     [[workshops.'Período Noturno'.days]]
-    name = '04 de Outubro'
+    name = '03 de Outubro'
     weekday = 'Quinta-feira'
     time = '20:20 às 22:00'
     credits = '2 créditos'
