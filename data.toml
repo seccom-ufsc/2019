@@ -46,10 +46,7 @@
     subscribe = 'https://forms.gle/T8dh3hHvJzQxYRbV7'
 
 [schedule]
-    message = '''
-        Atenção: devido às atividades de greve, os horários da tarde para
-        Quarta e Quinta-feira podem ser trocados.
-    '''
+    message = ''''''
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
@@ -163,14 +160,12 @@
 
         [[schedule.days.events]]
         type = 'break'
-        time = '15:20 → 15:40 → 16:10'
+        time = '15:20 → 15:40'
         title = 'Lightning Talks e Coffee-Break!'
         icon = [
             'bolt',
             'arrow-right',
             'coffee',
-            'arrow-right',
-            'bolt',
         ]
 
         [[schedule.days.events]]
@@ -209,52 +204,8 @@
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
-        title = '02 de Outubro'
-        subtitle = 'Quarta-feira'
-
-        [[schedule.days.events]]
-        type = 'break'
-
-        [[schedule.days.events]]
-        type = 'extra'
-        time = '13:30 - 17:30'
-        title = 'Reservado para Manifestações'
-        spaces = 4
-        icon = 'fist-raised'
-
-        [[schedule.days.events]]
-        type = 'break'
-        title = 'Janta'
-        time = '17:20'
-        icon = 'utensils'
-
-        [[schedule.days.events]]
-        type = 'keynote'
-        speaker = 'maria'
-        time = '18:30'
-
-        [[schedule.days.events]]
-        type = 'break'
-        time = '19:30 → 19:50 → 20:20'
-        title = 'Lightning Talks e Coffee-Break!'
-        icon = [
-            'bolt',
-            'arrow-right',
-            'coffee',
-            'arrow-right',
-            'bolt',
-        ]
-
-        [[schedule.days.events]]
-        type = 'special'
-        time = '20:40'
-        title = 'Mesa Redonda'
-        subtitle = ''
-
-    # --------------------------------------------------------------------------
-    [[schedule.days]]
         title = '03 de Outubro'
-        subtitle = 'Quinta-feira'
+        subtitle = 'Quarta-feira'
 
         [[schedule.days.events]]
         type = 'break'
@@ -271,19 +222,17 @@
 
         [[schedule.days.events]]
         type = 'break'
-        time = '15:20 → 15:40 → 16:10'
+        time = '15:20 → 15:40'
         title = 'Lightning Talks e Coffee-Break!'
         icon = [
             'bolt',
             'arrow-right',
             'coffee',
-            'arrow-right',
-            'bolt',
         ]
 
         [[schedule.days.events]]
         type = 'special'
-        time = '16:30'
+        time = '16:10'
         title = 'Mesa Redonda'
         subtitle = 'Conjuntura Atual e Universidade'
 
@@ -314,6 +263,48 @@
         time = '20:40'
         speaker = 'lingnau'
         title = 'Product Thinking - Discovering the ultimate product value'
+
+    # --------------------------------------------------------------------------
+    [[schedule.days]]
+        title = '03 de Outubro'
+        subtitle = 'Quinta-feira'
+
+        [[schedule.days.events]]
+        type = 'break'
+
+        [[schedule.days.events]]
+        type = 'extra'
+        time = '13:30 - 17:30'
+        title = 'Reservado para Manifestações'
+        spaces = 4
+        icon = 'fist-raised'
+
+        [[schedule.days.events]]
+        type = 'break'
+        title = 'Janta'
+        time = '17:20'
+        icon = 'utensils'
+
+        [[schedule.days.events]]
+        type = 'keynote'
+        speaker = 'maria'
+        time = '18:30'
+
+        [[schedule.days.events]]
+        type = 'break'
+        time = '19:30 → 19:50'
+        title = 'Lightning Talks e Coffee-Break!'
+        icon = [
+            'bolt',
+            'arrow-right',
+            'coffee',
+        ]
+
+        [[schedule.days.events]]
+        type = 'special'
+        time = '20:40'
+        title = 'Mesa Redonda'
+        subtitle = ''
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
