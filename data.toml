@@ -204,7 +204,7 @@
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
-        title = '03 de Outubro'
+        title = '02 de Outubro'
         subtitle = 'Quarta-feira'
 
         [[schedule.days.events]]
