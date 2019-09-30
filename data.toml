@@ -377,12 +377,14 @@
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
     weekday = 'Segunda-feira'
+    place = 'CTC/INE/INE313'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
     [[workshops.'Período Matutino'.days]]
     name = '01 de Outubro'
     weekday = 'Terça-feira'
+    place = 'CTC/INE/INE106'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
@@ -408,12 +410,14 @@
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
     weekday = 'Segunda-feira'
+    place = 'CTC/INE/INE314'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
     [[workshops.'Período Matutino'.days]]
     name = '01 de Outubro'
     weekday = 'Terça-feira'
+    place = 'CTC/INE/INE314'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
@@ -434,6 +438,7 @@
     [[workshops.'Período Matutino'.days]]
     name = '02 de Outubro'
     weekday = 'Quarta-feira'
+    place = 'CTC/INE/INE106'
     time = '09:10 às 12:00'
     credits = '3 créditos'
 
@@ -463,12 +468,14 @@
     [[workshops.'Período Matutino'.days]]
     name = '02 de Outubro'
     weekday = 'Quarta-feira'
+    place = 'CTC/INE/INE314'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
     [[workshops.'Período Matutino'.days]]
     name = '03 de Outubro'
     weekday = 'Quinta-feira'
+    place = 'CTC/Bloco B/LIICT9'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
@@ -489,29 +496,37 @@
     [[workshops.'Período Matutino'.days]]
     name = '02 de Outubro'
     weekday = 'Quarta-feira'
+    place = 'CTC/INE/INE313'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
     [[workshops.'Período Matutino'.days]]
     name = '03 de Outubro'
     weekday = 'Quinta-feira'
+    place = 'CTC/INE/INE313'
     time = '10:10 às 12:00'
     credits = '2 créditos'
 
     [[workshops.'Período Noturno']]
     title = 'Minicurso de Git'
     speaker = 'tarcisio'
-    about = ''''''
+    about = '''Minicurso introdutório ao uso da ferramenta Git para
+    controle de versão e desenvolvimento colaborativo de projetos. Serão
+    abordadas as operações básicas para o uso local da ferramenta, e os
+    conceitos básicos para o uso remoto e colaborativo, incluindo uma
+    introdução à plataforma Github.'''
 
     [[workshops.'Período Noturno'.days]]
     name = '30 de Setembro'
     weekday = 'Segunda-feira'
+    place = 'CTC/Bloco B/LIICT9'
     time = '20:20 às 22:00'
     credits = '2 créditos'
 
     [[workshops.'Período Noturno'.days]]
     name = '02 de Outubro'
     weekday = 'Quarta-feira'
+    place = 'CTC/INE/INE313'
     time = '20:20 às 22:00'
     credits = '2 créditos'
 
@@ -532,12 +547,14 @@
     [[workshops.'Período Noturno'.days]]
     name = '01 de Outubro'
     weekday = 'Terça-feira'
+    place = 'CTC/INE/INE313'
     time = '20:20 às 22:00'
     credits = '2 créditos'
 
     [[workshops.'Período Noturno'.days]]
     name = '03 de Outubro'
     weekday = 'Quinta-feira'
+    place = 'CTC/INE/INE313'
     time = '20:20 às 22:00'
     credits = '2 créditos'
 
