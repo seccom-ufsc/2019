@@ -244,25 +244,24 @@
 
         [[schedule.days.events]]
         type = 'keynote'
-        speaker = 'taissa'
+        speaker = 'maria'
         time = '18:30'
 
         [[schedule.days.events]]
         type = 'break'
-        time = '19:30 → 19:50 → 20:20'
+        time = '19:30 → 19:50'
         title = 'Lightning Talks e Coffee-Break!'
         icon = [
             'bolt',
             'arrow-right',
             'coffee',
-            'arrow-right',
-            'bolt',
         ]
 
         [[schedule.days.events]]
+        type = 'special'
         time = '20:40'
-        speaker = 'lingnau'
-        title = 'Product Thinking - Discovering the ultimate product value'
+        title = 'Mesa Redonda'
+        subtitle = ''
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
@@ -287,24 +286,25 @@
 
         [[schedule.days.events]]
         type = 'keynote'
-        speaker = 'maria'
+        speaker = 'taissa'
         time = '18:30'
 
         [[schedule.days.events]]
         type = 'break'
-        time = '19:30 → 19:50'
+        time = '19:30 → 19:50 → 20:20'
         title = 'Lightning Talks e Coffee-Break!'
         icon = [
             'bolt',
             'arrow-right',
             'coffee',
+            'arrow-right',
+            'bolt',
         ]
 
         [[schedule.days.events]]
-        type = 'special'
         time = '20:40'
-        title = 'Mesa Redonda'
-        subtitle = ''
+        speaker = 'lingnau'
+        title = 'Product Thinking - Discovering the ultimate product value'
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
