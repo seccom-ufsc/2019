@@ -123,8 +123,14 @@
         type = 'break'
 
         [[schedule.days.events]]
-        type = 'soon'
+        speaker = 'tiz'
         time = '13:30'
+        # Escalonador para multicores em larga escala
+        title = '''
+            Palestra confirmada. Aguardando informações.
+        '''
+        desc = '''
+        '''
 
         [[schedule.days.events]]
         speaker = 'marcio'
@@ -583,7 +589,7 @@
     '''
 
     [keynotes.maddog]
-    name = 'John "Maddog" Hall'
+    name = 'John "Maddog" Hall (?)'
     short = 'Presidente da Linux Professional Institute'
     bio = '''
         Jon é atual presidente da Linux Professional Institute. Entrou para a
@@ -755,4 +761,8 @@
 
     [speakers.escher]
     name = 'Francisco Escher Guimarães da Silva'
+    bio = '''None.'''
+
+    [speakers.tiz]
+    name = '<i>Coming soon</i>'
     bio = '''None.'''
