@@ -127,9 +127,24 @@
         time = '13:30'
         # Escalonador para multicores em larga escala
         title = '''
-            Palestra confirmada. Aguardando informações.
+            Por que um Cientista da Computação deve explorar linguagens e
+            paradigmas?
         '''
         desc = '''
+            A Ciência da Computação é arte de resolver problemas. Um cientista
+            da computação certamente irá conhecer Máquinas de Turing,
+            algoritmos, autômatos e linguagens como ferramentas para montar
+            soluções. Mas como tirar mais proveito disso? É possível expandir a
+            maneira de resolver problemas, indo além da imperatividade? Teriam
+            soluções e ferramentas completamente diferentes disponíveis para se
+            aprender? Certamente, e explorar essas ferramentas é um dever de um
+            curioso pela teoria por trás das linguagens, como é um cientista da
+            computação. Nessa palestra, serão expostas formas de compreender
+            outros paradigmas e aproveitar tal conhecimento para criar
+            softwares com maior qualidade e segurança, além de demonstrar uma
+            tragetória para se compreender diversas partes da teoria que
+            carrega o nome "Computação" a partir da realidade das linguagens
+            atuais.
         '''
 
         [[schedule.days.events]]
@@ -178,7 +193,7 @@
         type = 'special'
         title = 'Roda de Conversa'
         subtitle = 'Tema: "Curricularização da Extensão"'
-        time = '16:30'
+        time = '16:10'
 
         [[schedule.days.events]]
         type = 'break'
@@ -764,5 +779,5 @@
     bio = '''None.'''
 
     [speakers.tiz]
-    name = '<i>Coming soon</i>'
+    name = 'João Paulo Taylor Ienczak Zanette'
     bio = '''None.'''
