@@ -286,159 +286,29 @@
                     <h3 style="margin-bottom: 60px;" class="section-title">Keynotes</h3>
                 </div>
                 <div class="row" style="text-align: center; margin-top: 40px;">
+                {% for three_mages in keynotes.items()|in_chunks(size=3) %}
+                    {% for keyn in three_mages %}
+                    {% if keyn %}
+                    {% set key_id, keynote = keyn %}
                     <div class="col-md-3 col-xs-6">
                         <a
                             class="speaker-link"
-                            data-title='Jon "Maddog" Hall'
-                            data-company="Linux Professional Institute"
-                            data-desc="Jon é atual presidente da Linux
-                            Professional Institute. Entrou para a indústria da
-                            computação em 1969, atuando como programador,
-                            administrador de sistemas, gerente de produto,
-                            gerente técnico de marketing, consultor, professor
-                            de universidade, autor de livros e revistas, e
-                            blogger.
-
-                            Ao longo dos anos já previa algumas das tendências
-                            antes delas se realizarem: o surgimento do Unix
-                            como Sistema Operacional, o uso de CD-ROMs para
-                            distribuir software, o crescimento do Linux como um
-                            sistema comercial, e a necessidade de produtos na
-                            nuvem que fossem open-source, ponta-a-ponta e
-                            seguros.
-
-                            Também participa de várias iniciativas, como a
-                            Caninos Loucos, que visa potencializar no Brasil o
-                            projeto e manufatura de computadores de chip único.
-
-                            No momento, &quot;Maddog&quot; está como CEO na
-                            OptDyn a fim de ajudá-la a mudar o mundo."
-                            data-src="https://media.licdn.com/dms/image/C4E03AQHbq2GkjjIC8A/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=P-ezM0P_5Us9cHn2JBILfnDbqnJ0JXuOpoOv4R5EqyM"
+                            data-title='{{ keynote.name }}'
+                            data-company="{{ keynote.company|or('') }}"
+                            data-desc="{{ keynote.bio }}"
+                            data-src="./img/people/{{ key_id }}.jpg"
                         >
                             <img
                                 class="image"
-                                src="https://media.licdn.com/dms/image/C4E03AQHbq2GkjjIC8A/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=P-ezM0P_5Us9cHn2JBILfnDbqnJ0JXuOpoOv4R5EqyM"
+                                src="./img/people/{{ key_id }}.jpg"
                                 alt='Jon "Maddog" Hall'
                             />
-                            <h3 class="speaker-name">Jon "Maddog" Hall</h3>
+                            <h3 class="speaker-name">{{ keynote.name }}</h3>
                         </a>
                     </div>
-                    <div class="col-md-3 col-xs-6">
-                        <a data-title="Mário Sérgio Oliveira de Queiroz"
-                            data-company="Python Brasil"
-                            data-desc="(Descrição em breve.)"
-                            class="speaker-link"
-                            data-src="https://media.licdn.com/dms/image/C5603AQFQgRrlMiuJRQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=Ph37p5liKrH9B1uQf6gueXXpkWGYoO_qoB0eFHlYuyc"
-                        >
-                            <img
-                                class="image"
-                                src="https://media.licdn.com/dms/image/C5603AQFQgRrlMiuJRQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=Ph37p5liKrH9B1uQf6gueXXpkWGYoO_qoB0eFHlYuyc"
-                                alt = "Mário Sérgio Oliveira de Queiroz"
-                            />
-                            <h3 class="speaker-name">Mário Sérgio Oliveira de Queiroz</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <a data-title="Melissa Weber Mendonça"
-                            data-company="UFSC"
-                            data-desc="Melissa possui graduação em Matemática e Computação Científica pela Universidade Federal de Santa Catarina (2002), mestrado em Matemática e Computação Científica pela Universidade Federal de Santa Catarina (2005) e doutorado pela Facultés Universitaires Notre-Dame de La Paix (Bélgica, 2009). Tem experiência na área de Matemática Aplicada, atuando principalmente nos seguintes temas: otimização, análise numérica, métodos recursivos e métodos multiníveis (multigrid)."
-                            class="speaker-link"
-                            data-src="https://media.licdn.com/dms/image/C4E03AQGYq_Fh9PM9sA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=pStgltdGcWMeb9JxNnjVAk9GRfe_RCbguFSvb7C3M7o"
-                        >
-                            <img class="image"
-                                src="https://media.licdn.com/dms/image/C4E03AQGYq_Fh9PM9sA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=pStgltdGcWMeb9JxNnjVAk9GRfe_RCbguFSvb7C3M7o"
-                                alt = "Melissa Weber Mendonça"
-                            />
-                            <h3 class="speaker-name">Melissa Weber Mendonça</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-3 col-xs-6">
-                        <a
-                            data-title='Álvaro "Turicas" Justen'
-                            data-company="Brasil.io"
-                            data-desc="(Descrição em breve.)"
-                            class="speaker-link"
-                            data-src="https://media.licdn.com/dms/image/C4E03AQGlh28zKfgkUQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=MnuB2YcMbIEeEKwpoNpCV_HDtw1_y38c-jTElfecav0">
-                            <img
-                                class="image"
-                                src="https://media.licdn.com/dms/image/C4E03AQGlh28zKfgkUQ/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=MnuB2YcMbIEeEKwpoNpCV_HDtw1_y38c-jTElfecav0"
-                                alt='Álvaro "Turicas" Justen'
-                            />
-                            <h3 class="speaker-name">Álvaro "Turicas" Justen</h3>
-                        </a>
-                    </div>
-                </div>
-                <div class="row" style="text-align: center; margin-top: 20px;">
-                    <!-- Os bloco comentado tem uns campo customizado de workshop e tretas -->
-
-                    <!-- <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
-                        <a class="speaker-link" data-title="Speaker" data-company="Company" data-desc="Sed ipsum justo, sodales vitae vulputate quis, cursus vel libero. Nullam aliquet rutrum ultrices. Ut sodales leo mauris, at fermentum dolor sagittis et. In volutpat nibh ipsum, ac pulvinar lectus ornare et." data-speach="Lecture#5" data-src="https://avatars2.githubusercontent.com/u/9861724?v=3&s=460">
-                            <img class="image" src="https://avatars2.githubusercontent.com/u/9861724?v=3&s=460" alt="Jacek Samujło" />
-                            <h3 class="speaker-name">Speaker</h3>
-                        </a>
-                    </div> -->
-                    <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
-                        <a class="speaker-link"
-                            data-title="Maria Queiroz"
-                            data-company="Data For Good"
-                            data-desc="Maria Queiroz é consultora de Business
-                                Intelligence e já atuou em grandes marcas do
-                                varejo como Adidas, Arezzo e Schutz. Já passou
-                                pelo setor de telecomunicações, setor público e
-                                indústria.
-
-                                É apaixonada pelo poder dos dados para
-                                potencializar resultados, seja ele para
-                                negócios ou para sociedade.
-
-                                Já mentorou grandes iniciativas de impacto
-                                social, como: Social Good Brasil, InovAtiva
-                                Brasil e Technovation Challenge."
-                            data-speach="Como usar dados para o bem?"
-                            data-src="https://media.licdn.com/dms/image/C5603AQEoln2o4jwbSA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=cQKrUoRAD6w7y9_gXSejHsmLCM8I1CWrduSkVdjd2I4"
-                        >
-                            <img class="image"
-                                src="https://media.licdn.com/dms/image/C5603AQEoln2o4jwbSA/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=cQKrUoRAD6w7y9_gXSejHsmLCM8I1CWrduSkVdjd2I4"
-                                alt="Maria Queiroz"
-                            />
-                            <h3 class="speaker-name">Maria Queiroz</h3>
-                        </a>
-                    </div>
-                    <div class="col-md-4 col-xs-6" style="text-align: center; z-index:1;">
-                        <a class="speaker-link"
-                            data-title="Victor Araújo de Menezes"
-                            data-company="E-GOV UFSC"
-                            data-desc="Victor é Doutorando e Mestre em Direito da Sociedade de Informação e Propriedade Intelectual pela UFSC. Também pesquisador do E-GOV UFSC e analista de proteção de dados, atua na área de consultoria empresarial."
-                            data-speach="Proteção de Dados"
-                            data-src="https://media.licdn.com/dms/image/C4E03AQGuLcsCiF7Tjg/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=X4_QVn2pK52PA5xfrtI7XMyToGZOugzp3ko8oVtWNmk"
-                        >
-                            <img class="image"
-                                src="https://media.licdn.com/dms/image/C4E03AQGuLcsCiF7Tjg/profile-displayphoto-shrink_800_800/0?e=1572480000&v=beta&t=X4_QVn2pK52PA5xfrtI7XMyToGZOugzp3ko8oVtWNmk"
-                                alt="Victor Araújo de Menezes"
-                            />
-                            <h3 class="speaker-name">Victor Araújo de Menezes</h3>
-                        </a>
-                    </div>
-			        <div class="col-lg-4" style="text-align: center;">
-                        <a data-title="Taíssa Vasconcelos"
-                            data-company="Linx"
-                            data-desc="Taíssa Vasconcelos é uma belenense
-                            formada em Publicidade, que já atuou como Social
-                            Media, Produtora, Visual Designer e Front-End. Tem
-                            várias especializações em Front e UX. Atualmente
-                            trabalha na Linx Impulse como Front-End. É
-                            apaixonada por animais, praia e acredita que vai
-                            ajudar a tornar o mundo um lugar melhor."
-                            class="speaker-link"
-                            data-src="./img/people/TaissaVasconcelos.jpg"
-                        >
-                            <img class="image"
-                                src="./img/people/TaissaVasconcelos.jpg"
-                                alt="Taíssa Vasconcelos"
-                            />
-                            <h3 class="speaker-name">Taíssa Vasconcelos</h3>
-                        </a>
-                    </div>
+                    {% endif %}
+                    {% endfor %}
+                {% endfor %}
                 </div>
             </div>
             <!--OVERLAY-->

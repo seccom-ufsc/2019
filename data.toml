@@ -203,7 +203,7 @@
 
         [[schedule.days.events]]
         type = 'keynote'
-        speaker = 'maddog'
+        speaker = 'stark'
         time = '18:30'
 
         [[schedule.days.events]]
@@ -603,30 +603,17 @@
         proteção de dados, atua na área de consultoria empresarial.
     '''
 
-    [keynotes.maddog]
-    name = 'John "Maddog" Hall (?)'
-    short = 'Presidente da Linux Professional Institute'
+    [keynotes.stark]
+    name = 'Evandro "Stark" Chagas'
+    short = 'Mestrando em Computação atuante na área de Quântica'
+    company = 'PPGCC (UFSC)'
     bio = '''
-        Jon é atual presidente da Linux Professional Institute. Entrou para a
-        indústria da computação em 1969, atuando como programador,
-        administrador de sistemas, gerente de produto, gerente técnico de
-        marketing, consultor, professor de universidade, autor de livros e
-        revistas, e blogger.
-
-        Ao longo dos anos já previa algumas das tendências
-        antes delas se realizarem: o surgimento do Unix
-        como Sistema Operacional, o uso de CD-ROMs para
-        distribuir software, o crescimento do Linux como um
-        sistema comercial, e a necessidade de produtos na
-        nuvem que fossem open-source, ponta-a-ponta e
-        seguros.
-
-        Também participa de várias iniciativas, como a
-        Caninos Loucos, que visa potencializar no Brasil o
-        projeto e manufatura de computadores de chip único.
-
-        No momento, &quot;Maddog&quot; está como CEO na
-        OptDyn a fim de ajudá-la a mudar o mundo.
+        Evandro Chagas é formado em Ciências da Computação pela UFSC e
+        mestrando do Programa de Pós-graduação em Ciência da Computação da
+        UFSC. Membro do Laboratório de Inteligência Artificial e Teoria
+        Computacional (IATe) e do Grupo de Computação Quântica (GCQ-UFSC). Sua
+        linha de pesquisa é em computação quântica, mais especificamente,
+        simulação e linguagens de programação quântica.
     '''
 
     [keynotes.maria]
