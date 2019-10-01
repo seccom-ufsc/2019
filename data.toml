@@ -221,7 +221,7 @@
         [[schedule.days.events]]
         speaker = 'hauck'
         time = '20:40'
-        title = 'Integrando arquitetura e protejo a equipes ágeis'
+        title = 'Integrando arquitetura e projeto a equipes ágeis'
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
