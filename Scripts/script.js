@@ -141,12 +141,7 @@ function toggleWorkshopsLayout() {
 }
 
 function toggleBrandImageSource() {
-    if (innerWidth <= 320) {
-        $('#brand-image').attr('src', 'Images/new-logo.jpg');
-    }
-    else {
-        $('#brand-image').attr('src', 'Images/new-logo.jpg');
-    }
+    $('#brand-image').attr('src', 'img/logo/navbar-logo.jpg');
 }
 
 $(window).resize(function () {
