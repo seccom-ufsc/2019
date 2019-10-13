@@ -1,0 +1,11 @@
+#!/usr/bin/bash
+
+COMPRESSARGS="-strip -alpha Remove -sampling-factor 4:2:0 -interlace JPEG -colorspace RGB -quality 85"
+
+for file in $*
+do
+    echo "Compressing ${file}..."
+    convert "${file}" ${COMPRESSARGS} ${file};
+done
+
+echo "Done."
