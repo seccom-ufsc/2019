@@ -4,6 +4,7 @@ from pathlib import Path
 
 import toml
 from jinja2 import Environment, FileSystemLoader
+from htmlmin import minify
 
 
 def generate(data, template: Path, output: Path):
@@ -17,14 +18,16 @@ def generate(data, template: Path, output: Path):
     env.filters['or'] = or_default
 
     with open(output, 'w') as f:
-        f.write(env.get_template(template.name).render(
+        html = env.get_template(template.name).render(
             contests=data['contests'],
             keynotes=data['keynotes'],
             schedule=data['schedule'],
             speakers=data['speakers'],
             subscribe=data['subscribe'],
             workshops=data['workshops'],
-        ))
+        )
+        minified = minify(html, remove_comments=True, remove_empty_space=True)
+        f.write(minified)
 
 
 def grouper(iterable, size, fillvalue=None):

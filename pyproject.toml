@@ -9,6 +9,7 @@ license = "mit"
 python = "^3.7"
 Jinja2 = "^2.10"
 toml = "^0.10.0"
+htmlmin = "^0.1.12"
 
 [tool.poetry.dev-dependencies]
 
