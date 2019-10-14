@@ -1,5 +1,17 @@
+[sections]
+    links = [
+        { title = 'Início', class='scroll-top', name = '' },
+        { title = 'Materiais', name = 'materials' },
+        { title = 'Programação', name = 'timeline' },
+        { title = 'Palestrantes', name = 'speakers' },
+        { title = 'Organização', name = 'partners' },
+        { title = 'Contato', name = 'contact' },
+        # { title = 'Inscreva-se', class='register', url = 'https://www.sympla.com.br/seccom-2019__632383' },
+    ]
+
 [subscribe]
-    workshop = 'https://docs.google.com/forms/d/e/1FAIpQLScaSQj9MBJJsgE77ef11SWf10cuyUUajxt0GeZkRkNghr4JZQ/viewform'
+    event = { active = false, url = 'https://www.sympla.com.br/seccom-2019__632383', id = 'evenea-btn' }
+    workshop = { active = false, url = 'https://forms.gle/qVu9SccPjkwUKVFb6' }
 
 # Contests
     [[contests]]
@@ -23,7 +35,7 @@
     '''
     day = '04 de Outubro'
     time = '8:20'
-    subscribe = 'https://forms.gle/hnur18b3Pg54eJ5r8'
+    subscribe = { active = false, url = 'https://forms.gle/hnur18b3Pg54eJ5r8' }
 
     [[contests]]
     title = 'Capture The Flag'
@@ -43,7 +55,7 @@
     '''
     day = '04 de Outubro'
     time = '18:30'
-    subscribe = 'https://forms.gle/T8dh3hHvJzQxYRbV7'
+    subscribe = { active = false, url = 'https://forms.gle/T8dh3hHvJzQxYRbV7' }
 
 [schedule]
     message = ''''''
@@ -367,6 +379,9 @@
         speaker = 'nicolao'
         title = 'Física Computacional e Simulação de Materiais'
         time = '16:30'
+
+        [schedule.days.events.materials]
+        test = 'hehe'
 
         [[schedule.days.events]]
         type = 'break'

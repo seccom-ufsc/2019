@@ -1,3 +1,13 @@
+{% macro make_navlist(surround, node_class) %}
+    {% for link in sections.links %}
+        {% set url = link.url if link.url else ('#' + link.name) %}
+        {% set _class = node_class + ' ' + link.class if link.class else node_class %}
+        {{ '<' + surround + '>' if surround else '' }}
+        <a class="{{ _class }}" href="{{ url }}" data-id="{{ link.name }}">{{ link.title }}</a>
+        {{ '</' + surround + '>' if surround else '' }}
+    {% endfor %}
+{% endmacro %}
+
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <head>
@@ -48,12 +58,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link scroll-top uppercased" id="top-btn" href="#">Início</a>
-                    <a class="nav-item nav-link uppercased" href="#Programação" data-id="timeline">Programação</a>
-                    <a class="nav-item nav-link uppercased" href="#Palestrantes" data-id="speakers">Palestrantes</a>
-                    <a class="nav-item nav-link uppercased" href="#Organização" data-id="partners">Organização</a>
-                    <a class="nav-item nav-link uppercased" href="#Contato" data-id="contact">Contato</a>
-                    <a class="nav-item nav-link register uppercased" href="https://www.sympla.com.br/seccom-2019__632383">INSCREVA-SE</a>
+                    {{ make_navlist(node_class='nav-item nav-link uppercased') }}
                 </div>
             </div>
         </div>
@@ -67,8 +72,8 @@
                     <h6 style="color:white" class="title-header animated slideInLeft uppercased">semana acadêmica de computação e sistemas</h6>
                     <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">Universidade Federal de Santa Catarina</p>
                     <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">Auditório João Ernesto Escosteguy Castro</p>
-                    <p style="color:white;  font-size: 1.1em" class="title-text animated fadeInRight">R. Roberto Sampaio Gonzaga, Florianópolis</p>
-                    <p style="color:white;  font-size: 1.1em" class="title-text animated fadeInRight uppercased">30/09/19 - 04/10/19</p>
+                    <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">R. Roberto Sampaio Gonzaga, Florianópolis</p>
+                    <p style="color:white; font-size: 1.1em" class="title-text animated fadeInRight">30/09/19 - 04/10/19</p>
                 </div>
                 <div id="timer" class="col ml-auto" style="display: none">
                     <p style="color: white; font-size: 1.1em" class="uppercased">falta só um pouquinho!</p>
@@ -81,9 +86,12 @@
     </div>
     <div class="evenea">
         <div id="evenea-c" class="col-sm-12">
-            <a href="https://www.sympla.com.br/seccom-2019__632383" id="evenea-btn">
-                INSCREVA-SE<span style="color:white; margin-left: 7px" class="fa fa-pencil"></span>
-            </a>
+            {{
+                subscribe['event']|make_button(
+                    active_text='INSCREVA-SE',
+                    inactive_text='EVENTO ENCERRAOD',
+                )
+            }}
         </div>
     </div>
     <div id="wrapper">
@@ -122,6 +130,16 @@
                 </div>
             </div>
         </div>
+        <!-- Materiais -->
+        <section class="page-section" id="materials">
+            <div id="Materiais" class="container text-center">
+                <div class="section-title">
+                    <div class="text-center">
+                        <h3 class="section-title">Materiais</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div class="page-section" id="features">
             <div class="container">
                 <section id="contests">
@@ -142,12 +160,12 @@
                                 {% endif %}{{ contest.title }}</h4>
                                 <p>{{ contest.about }}</p>
                                 <center>
-                                    <a
-                                        href="{{ contest.subscribe }}"
-                                        class="btn btn-outline-dark active"
-                                        role="button">
-                                        INSCREVA SUA EQUIPE&nbsp;<i class="fa fa-pencil"></i>
-                                    </a>
+                                    {{
+                                        contest.subscribe|make_button(
+                                            active_text='INSCREVA SUA EQUIPE',
+                                            inactive_text='INSCRIÇÕES ENCERRADAS',
+                                        )
+                                    }}
                                 </center>
                             </div>
                         {% endfor %}
@@ -220,12 +238,12 @@
                     <!--WORKSHOPS-->
                     <h3 class="section-title">Oficinas</h3>
                     <center>
-                        <a
-                            href="{{ subscribe['workshop'] }}"
-                            class="btn btn-outline-dark active"
-                            role="button">
-                            INSCREVA-SE&nbsp;<i class="fa fa-pencil"></i>
-                        </a>
+                        {{
+                            subscribe['workshop']|make_button(
+                                active_text='INSCREVA-SE!',
+                                inactive_text='INSCRIÇÕES ENCERRADAS',
+                            )
+                        }}
                     </center>
                     <section class="workshops">
                         {% for period, events in workshops.items() %}
@@ -280,6 +298,7 @@
                 </section>
             </section>
         </div>
+        <!-- Keynotes -->
         <section id="speakers" style="background-color: rgb(247,247,247)">
             <div id="Palestrantes" class="container" style="text-align:center; padding-bottom: 50px; padding-top:20px">
                 <div class="text-center">
@@ -441,12 +460,7 @@
     <footer class="final-footer">
         <div class="container footer-con">
             <ul class="nav-down">
-                <li><a class="scroll-top bottom-nav" href="#">Início</a></li>
-                <li><a class="menu-but bottom-nav" href="#Programação" data-id="timeline">Programação</a></li>
-                <li><a class="menu-but bottom-nav" href="#Palestrantes" data-id="speakers">Palestrantes</a></li>
-                <li><a class="menu-but bottom-nav" href="#Organização" data-id="partners">Organização</a></li>
-                <li><a class="menu-but bottom-nav" href="#Contato" data-id="contact">Contato</a></li>
-                <li><a class="register" href="https://www.sympla.com.br/seccom-2019__632383">Inscreva-se</a></li>
+                {{ make_navlist(surround='li', node_class='menu-but') }}
             </ul>
             <p style="color:white; font-size:0.8em; padding: 20px 0 0 0; opacity:0.6; text-decoration:underline">Conference sites using this template:</p>
             <a href="http://www.liderferencja.pl/"><img style="width: 100px; margin-bottom: 30px; opacity:0.8" src="img/other/lider-logo.png"/></a>

@@ -7,6 +7,35 @@ from jinja2 import Environment, FileSystemLoader
 from htmlmin import minify
 
 
+def make_button(button, active_text, inactive_text) -> str:
+    active = button['active']
+    icon = '&nbsp;<i class="fa fa-pencil"></i>'
+
+    text = f'{active_text}{icon}' if active else inactive_text
+    button_class = ' '.join([
+        'btn',
+        'btn-outline-dark',
+        'active' if active else 'disabled',
+    ])
+
+    fields = {
+        'id': button['id'] if 'id' in button else None,
+        'href': button['url'] if 'url' in button else None,
+        'class': button_class,
+        'aria-disabled': None if active else 'true',
+    }
+
+    return ''.join([
+        '<a ',
+        ' '.join(
+            f'{field}="{value}"'
+            for field, value in fields.items()
+            if value is not None
+        ),
+        f'>{text}</a>',
+    ])
+
+
 def generate(data, template: Path, output: Path):
     env = Environment(
         loader=FileSystemLoader(searchpath=[
@@ -16,12 +45,14 @@ def generate(data, template: Path, output: Path):
     env.filters['is_list'] = lambda x: isinstance(x, list)
     env.filters['in_chunks'] = grouper
     env.filters['or'] = or_default
+    env.filters['make_button'] = make_button
 
     with open(output, 'w') as f:
         html = env.get_template(template.name).render(
             contests=data['contests'],
             keynotes=data['keynotes'],
             schedule=data['schedule'],
+            sections=data['sections'],
             speakers=data['speakers'],
             subscribe=data['subscribe'],
             workshops=data['workshops'],
