@@ -8,6 +8,18 @@
     {% endfor %}
 {% endmacro %}
 
+{% macro list_materials(materials) %}
+<ul>
+    {% for material in materials %}
+        <li>
+        {% if material.type == 'url' %}
+            <a href="{{ material.url }}">{{ material.title }}</a>
+        {% endif %}
+        </li>
+    {% endfor %}
+</ul>
+{% endmacro %}
+
 <!DOCTYPE html>
 <html prefix="og: http://ogp.me/ns#">
 <head>
@@ -132,12 +144,53 @@
         </div>
         <!-- Materiais -->
         <section class="page-section" id="materials">
-            <div id="Materiais" class="container text-center">
+            <div id="Materiais" class="container">
                 <div class="section-title">
                     <div class="text-center">
                         <h3 class="section-title">Materiais</h3>
                     </div>
                 </div>
+                <h4>Materiais de Palestras e Keynotes</h4>
+                {% for day in schedule.days %}
+                    <h5>{{ day.title }}</h5>
+
+                    <ul>
+                    {% for event in day.events %}
+                        {% if (
+                            (not event.type
+                             or event.type == 'keynote')
+                            and event.materials
+                        ) %}
+                        <li>
+                        <b>{{
+                            '[Keynote] ' + keynotes[event.speaker].name
+                            if event.type == 'keynote' else event.title
+                        }}</b>
+                        {{ list_materials(event.materials) }}
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+
+                    <br>
+                {% endfor %}
+
+                <br>
+                <h4>Materiais de Minicursos</h4>
+                {% for period, workshop_in_day in workshops.items() %}
+                    <h5>{{ period }}</h5>
+
+                    <ul>
+                    {% for workshop in workshop_in_day %}
+                        {% if workshop.materials %}
+                        <li>
+                            <b>{{ workshop.title }}</b>
+                            {{ list_materials(workshop.materials) }}
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    </ul>
+                {% endfor %}
             </div>
         </section>
         <div class="page-section" id="features">

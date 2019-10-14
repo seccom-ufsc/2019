@@ -217,6 +217,9 @@
         type = 'keynote'
         speaker = 'stark'
         time = '18:30'
+        materials = [
+            { type = 'url', title = 'Slides', url = 'materials/keynote-stark.pdf' }
+        ]
 
         [[schedule.days.events]]
         type = 'break'
@@ -362,6 +365,9 @@
         speaker = 'raul'
         time = '14:30'
         title = 'Fazendo um bom projeto de pesquisa'
+        materials = [
+            { type = 'url', title = 'Slides', url = 'materials/talk-raul.pdf' }
+        ]
 
         [[schedule.days.events]]
         type = 'break'
@@ -379,9 +385,6 @@
         speaker = 'nicolao'
         title = 'Física Computacional e Simulação de Materiais'
         time = '16:30'
-
-        [schedule.days.events.materials]
-        test = 'hehe'
 
         [[schedule.days.events]]
         type = 'break'
@@ -470,6 +473,11 @@
         quântico, superposição, entrelaçamento, medida e representação. Sendo todos
         eles vistos na prática com o simulador quântico QSystem para Python.
     '''
+    materials = [
+        { type = 'url', title = 'Slides', url = 'materials/workshop-stark.pdf' },
+        { type = 'url', title = 'Pacote na PyPI', url = 'https://pypi.org/project/QSystem/' },
+        { type = 'url', title = 'Repositório', url = 'https://gitlab.com/evandro-crr/qsystem' },
+    ]
 
     [[workshops.'Período Matutino'.days]]
     name = '02 de Outubro'
@@ -500,6 +508,9 @@
         - Paradigma de fluxo de dados (streams): ao infinito e além com lazy evaluation<br>
         - Processamento simbólico e metalinguagem
     '''
+    materials = [
+        { type = 'url', title = 'Material completo', url = 'https://baioc.github.io/scheme/' }
+    ]
 
     [[workshops.'Período Matutino'.days]]
     name = '02 de Outubro'
@@ -551,6 +562,10 @@
     abordadas as operações básicas para o uso local da ferramenta, e os
     conceitos básicos para o uso remoto e colaborativo, incluindo uma
     introdução à plataforma Github.'''
+    materials = [
+        { type = 'url', title = 'Livro Oficial', url = 'https://git-scm.com/book/en/v2' },
+        { type = 'url', title = 'Learn Git Branching', url = 'https://learngitbranching.js.org' },
+    ]
 
     [[workshops.'Período Noturno'.days]]
     name = '30 de Setembro'
@@ -579,6 +594,10 @@
         detectá-las durante uma análise de segurança ou para previnir que as
         mesmas aconteçam durante o processo de desenvolvimento.
     '''
+    materials = [
+        { type = 'url', title = 'Slides', url = 'materials/workshop-or-11-Web-Hacking-101.pdf' },
+        { type = 'url', title = 'Repositório (Arquivos + Write-Ups)', url = 'https://github.com/dmarquesdev/seccom-ufsc-ctf-2019' },
+    ]
 
     [[workshops.'Período Noturno'.days]]
     name = '01 de Outubro'
