@@ -341,6 +341,9 @@
         time = '20:40'
         speaker = 'lingnau'
         title = 'Product Thinking - Discovering the ultimate product value'
+        materials = [
+            { type = 'url', title = 'Slides', url = 'materials/talk-roberta-product-thinking.pdf' }
+        ]
 
     # --------------------------------------------------------------------------
     [[schedule.days]]
@@ -366,7 +369,7 @@
         time = '14:30'
         title = 'Fazendo um bom projeto de pesquisa'
         materials = [
-            { type = 'url', title = 'Slides', url = 'materials/talk-raul.pdf' }
+            { type = 'url', title = 'Slides', url = 'materials/talk-raul-bom-projeto-de-pesquisa.pdf' }
         ]
 
         [[schedule.days.events]]
