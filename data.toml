@@ -448,6 +448,10 @@
         2. Uma modelagem para problemas de otimização; e<br>
         3. O uso de uma ferramenta que resolve problemas de otimização.
     '''
+    materials = [
+        { type = 'url', title = 'Notas do curso', url = 'https://www.inf.ufsc.br/~alvaro.junio/SECCOM-2019/notas-seccom-2019.pdf' },
+        { type = 'url', title = 'Implementação: Problema do Transporte com pymprog', url = 'https://www.inf.ufsc.br/~alvaro.junio/SECCOM-2019/problema-transporte.py' },
+    ]
 
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
