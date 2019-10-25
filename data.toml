@@ -415,6 +415,9 @@
         necessárias para iniciar um projeto em Python e na sintaxe básica e
         utilidades diversas da linguagem.
     '''
+    materials = [
+        { type = 'url', title = 'Código completo (.tar.gz)', url = 'materials/calc.tar.gz' }
+    ]
 
     [[workshops.'Período Matutino'.days]]
     name = '30 de Setembro'
